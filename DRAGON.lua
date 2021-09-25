@@ -3271,7 +3271,7 @@ local Text = [[
  🌕 معني + اسمك ⤌ لعرض الميزه
  🌕 خلفيات ⤌ لعرض الميزه
  ─────── 🌕 ───────
-𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗩𝗢𝗗𝗧𝗞𝗔 ](t.me/surccesezr)𓆪
+𓆩 𝗖𝗛 - [ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 ](t.me/surccesezr)𓆪
  ─────── 🌕 ───────
 ]]
 keyboard = {}  
@@ -3286,19 +3286,19 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'سيزر' then
 local Text = [[
 
-╭▱▰▱▰𓆩[𝐕𝐎𝐃𝐓𝐊𝐀](http://t.me/surccesezr)𓆪▱▰▱▰╮
+╭▱▰▱▰𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑺𝑬𝒁𝑬](http://t.me/surccesezr)𓆪▱▰▱▰╮
 ┆
-┆[▸ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙾𝙳𝚃𝙺𝙰 ◂](http://t.me/surccesezr)
+┆[𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑺𝑶𝑼𝑹𝑪𝑬 𝑺𝑬𝒁𝑬](http://t.me/surccesezr)
 ┆
-╰▱▰▱▰𓆩[𝐕𝐎𝐃𝐓𝐊𝐀](http://t.me/surccesezr)𓆪▱▰▱▰╯
+╰▱▰▱▰𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑺𝑬𝒁𝑬](http://t.me/surccesezr)𓆪▱▰▱▰╯
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐅𝐀𝐑𝐍𝐂𝐄',url="t.me/BOT3mora"},{text = '3𝐌𝐎𝐑𝐀', url="t.me/XxDesha86Xx"}},
-{{text = '𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"}},
+{{text = '𝐃𝐄𝐕 𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"},{text = '𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀', url="t.me/BOT3mora"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐄𝐒𝐇𝐀',url="t.me/XxDesha86Xx"}},
 {{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/surccesezr"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك ??' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3311,8 +3311,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐅𝐀𝐑𝐍𝐂𝐄',url="t.me/BOT3mora"},{text = '𝐁𝐎𝐓 𝐅𝐀𝐑𝐍𝐂𝐄', url="t.me/Bot_JABWA_Bot"}},
-{{text = '3𝐌𝐎𝐑𝐀',url="t.me/XxDesha86Xx"},{text = '𝐁𝐎𝐓 3𝐌𝐎𝐑𝐀', url="t.me/vodika_55_bot"}},
+{{text = '𝐃𝐄𝐕 𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"},{text = '𝐁𝐎𝐓 𝐒𝐄𝐙𝐑', url="t.me/sezrrbot"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐄𝐒𝐇𝐀',url="t.me/XxDesha86Xx"},{text = '𝐁𝐎𝐓 𝐃𝐄𝐒𝐇𝐀', url="t.me/vodika_55_bot"}},
 {{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3320,9 +3320,9 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سيزر' or text == 'المبرمج سيزر' or text == 'مين عملك السورس' or text == 'مبرمح السورس²' then
+if text == 'المبرمج سيزر' or text == 'سيزر' or text == 'صاحب السورس' or text == 'مبرمج السورس' then
 local Text = [[
-سيزر مبرمج السورس² لو حابب تتواصل معاه
+سيزر مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
@@ -3333,7 +3333,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_e_z_r0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المبرمج عموري' or text == 'مبرمج السورس' or text == 'عموري' or text == 'صاحب السورس' then
+if text == 'المبرمج عموري' or text == 'عموري' or text == 'مبرمج السورس²' or text == 'عمر' then
 local Text = [[
 عموري مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
@@ -3346,9 +3346,9 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOT3mora&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المالك قناص' or text == 'ديشا' or text == 'قناص' or text == 'مالك السورس' then
+if text == 'المالك ديشا' or text == 'ديشا' or text == 'عوز انصب' or text == 'مالك السورس' then
 local Text = [[
-قناص مالك السورس لو حابب تتواصل معاه
+ديشا مالك السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
@@ -3428,17 +3428,6 @@ keyboard = {} keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
-end
-if text and text:match("^كلهم (.*)$") or text:match("^@كلهم (.*)$") and CoSu(msg) then 
-local ttag = text:match("^كلهم (.*)$") or text:match("^@كلهم (.*)$") 
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'- لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n- اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,DRAGON)
@@ -9608,7 +9597,7 @@ end
 function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n 🌕 الـعـضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
+usertext = '\n ?? الـعـضو  ← ['..data.first_name_..'](t.me/'..(data.username_ or 's_o_op')..')'
 local  statuss  = '\n 🌕 تم رفع حكاك في الجروب\n 🌕 احمرت ولا لسا'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
@@ -17802,7 +17791,7 @@ local Teext =[[
  🌕 كشف
  🌕 المحظورين
  🌕 المكتومين
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ 𖣘━┅┄⟞⟦ ??𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
  🌕 ❲ الادمن❳ ⇊
  𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
  🌕 رفع مميز ⇔ تنزيل مميز
