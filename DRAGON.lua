@@ -3348,7 +3348,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سيزر' or text == 'المبرمج سيزر' or text == 'صاحب السورس' or text == 'مبرمح السورس' then
+if text == 'المبرمج سيزر' or text == 'سيزر' or text == 'صاحب السورس' or text == 'مبرمح السورس' then
 local Text = [[
 سيزر مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
