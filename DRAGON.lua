@@ -1085,7 +1085,7 @@ if text == 'قـسم مـطورين الـسورس' then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج عموري','المبرمج سيزر'},
+{'المبرمج سيزر','المبرمج عموري'},
 {'مالك السورس'},
 {'مرات صاحب السورس'},
 {'قناة السورس','التواصل'},
@@ -1373,7 +1373,7 @@ if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج عموري','المبرمج سيزر'},
+{'المبرمج سيزر','المبرمج عموري'},
 {'المالك الديشا'},
 {'مرات صاحب السورس'},
 {'قناة السورس','التواصل'},
@@ -3176,15 +3176,15 @@ if text and database:get(bot_id.."Ttn:BBE:stats"..msg.chat_id_) == "open" then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 if data.id_ then 
 if data.id_ ~= bot_id then
-local AVIRAChengName = database:get(bot_id.."AVIRA:Cheng:Name"..data.id_)
+local DRAGONChengName = database:get(bot_id.."DRAGON:Cheng:Name"..data.id_)
 if not data.first_name_ then 
-if AVIRAChengName then 
-send(msg.chat_id_, msg.id_, " خوش معرف جان ["..AVIRAChengName..']')
-database:del(bot_id.."AVIRA:Cheng:Name"..data.id_) 
+if DRAGONChengName then 
+send(msg.chat_id_, msg.id_, " خوش معرف جان ["..DRAGONChengName..']')
+database:del(bot_id.."DRAGON:Cheng:Name"..data.id_) 
 end
 end
 if data.first_name_ then 
-if AVIRAChengName ~= data.first_name_ then 
+if DRAGONChengName ~= data.first_name_ then 
 local Text = {
   "جان اسمك خوش اسم ",
 "ليش غيرت اسمك يحلو ",
@@ -3192,7 +3192,7 @@ local Text = {
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
-database:set(bot_id.."AVIRA:Cheng:Name"..data.id_, data.first_name_) 
+database:set(bot_id.."DRAGON:Cheng:Name"..data.id_, data.first_name_) 
 end
 end
 end
@@ -3275,9 +3275,9 @@ end,nil)
 end
 if text == 'مميزات' then
 local Text = [[ 
- ─────── 🌕 ───────
+╾╾╾╾╾╾╾╾🌕╾╾╾╾╾╾╾╾
  🌕 لستخدام المميزات اتبع مايلي ⇈⇊
- ─────── 🌕 ───────
+╾╾╾╾╾╾╾╾🌕╾╾╾╾╾╾╾╾
  🌕 قران ⤌ لعرض الميزه
  🌕 اذكار ⤌ لعرض الميزه
  🌕 الصلاوات ⤌ لعرض الميزه
@@ -3298,9 +3298,9 @@ local Text = [[
  🌕 همسه ⤌ لعرض الميزه
  🌕 معني + اسمك ⤌ لعرض الميزه
  🌕 خلفيات ⤌ لعرض الميزه
- ─────── 🌕 ───────
+╾╾╾╾╾╾╾╾ 🌕 ╾╾╾╾╾╾╾╾
 𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗩𝗢𝗗𝗧𝗞𝗔 ](t.me/surccesezr)𓆪
- ─────── 🌕 ───────
+╾╾╾╾╾╾╾╾🌕╾╾╾╾╾╾╾╾
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3361,7 +3361,8 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_e_z_r0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المبرمج عموري' or text == 'عموري' or text == 'مبرمح السورس²' or text == 'عمر' then
+
+if text == 'المبرمج عموري' or text == 'عموري' or text == 'عمر' or text == 'مبرمج السورس²' then
 local Text = [[
 عموري مبرمج السورس² لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
@@ -3374,6 +3375,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOT3mora&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+
 if text == 'المالك ديشا' or text == 'مصطفي' or text == 'ديشا' or text == 'مالك السورس' then
 local Text = [[
 ديشا مالك السورس لو حابب تتواصل معاه
@@ -3387,7 +3389,8 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XxDesha86Xx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'مرات صاحب سورس' or text == 'مرات سيزر' or text == 'قمر السورس' or text == 'سوسو' then
+
+if text == 'مرات صاحب سورس' or text == 'مرات مبرمج السورس' or text == 'مرات سيزر' or text == 'سوسو' then
 local Text = [[
 سـوسـو مـرات سـيزور قمـر السـورس 🌔❤
 ]]
@@ -3399,21 +3402,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/soso_1589&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺' or text == 'عاوز بوت' then
-local Text = [[ 
-من أحسن السورسات على التليجرام سورس السيزر
-بجد سورس أمان جدا وفي مميزات جامده
-تع نصب بوتك عندنا لو محظور
-خش علي تواصل هيدخلك روم التواصل
-]]
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'مبرمج السورس', url="t.me/s_e_z_r0"}}, 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
+
 if text == 'قناة السورس' or text == 'قناه السورس' or text == 'قناة البرمجه' or text == 'قناة سورس سيزر' then
 local Text = [[
 من أحسن السورسات على التليجرام سورس السيزر
@@ -16797,7 +16786,7 @@ Msᴀɢ ~ #msgs
 ↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username 🌕  
 ↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙄𝘿 ➱ #id
 ↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙍𝘼𝙉𝙆 ➱  #stast 🌕  
-↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺??𝘼𝙎𝙂 ➱ #msgs 🌕  
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂?? 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺??𝘼𝙎𝙂 ➱ #msgs 🌕  
 ↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝗖𝗛 ➯  ↝@surccesezr↜ 🌕  
 ]],
 [[
