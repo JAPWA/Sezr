@@ -1012,7 +1012,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المـبـرمــج حــربي', url="t.me/J_P_T"}
+{{text = 'المـبـرمــج حــربي', url="t.me/J_P_T"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1025,7 +1025,7 @@ local Text = [[
 ]]
 keyboard.inline_keyboard = {
 {{text = 'قناة سورس حربي ', url="t.me/XTGXX"}},
-{{text = 'كـل ما هوا لطـيف ❀',url="t.me/JMTHON"}}, 
+{{text = 'كـل ما هوا لطـيف ❀', url="t.me/JMTHON"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3466,7 +3466,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,HRBY)
-local t = "\n☆ "..ttag.." \n⩹━━━━━❲𖥳 𝗛????𝗬 𖥳❳━━━━━⩺\n"
+local t = "\n☆ "..ttag.." \n⩹━━━━━❲𖥳 𝗛𝗥??𝗬 𖥳❳━━━━━⩺\n"
 x = 0
 local list = HRBY.members_
 for k, v in pairs(list) do
@@ -9232,7 +9232,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' 𖥳 لا تستطيع استخدام البوت \n 𖥳  يرجى الاشتراك بالقناه اولا \n 𖥳  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' 𖥳 لا تستطيع استخدام البوت \n ??  يرجى الاشتراك بالقناه اولا \n 𖥳  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -15654,7 +15654,7 @@ local List = {
 [[
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
- 𝚂𝚃?? 𓄹𓄼 #stast 
+ 𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
  𝗖𝗛 - ↝@XTGXX↜ ??.
 ]],
@@ -16098,7 +16098,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝗖𝗛 - ↝@XTGXX↜ 𖥳 .
 ]],
 [[
-??🇬 - 𝄬 username . #username  𓃠
+??🇬 - ?? username . #username  𓃠
 🇪?? - 𝄬 stast . #stast  ??
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
@@ -17089,7 +17089,7 @@ send(msg.chat_id_,msg.id_,"\n* 𖥳 لا استطيع البيع اقل من 1 *
 return false 
 end
 if tonumber(database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_)) == tonumber(0) then
-send(msg.chat_id_,msg.id_,' 𖥳 ليس لديك نقاط في الالعاب\n 𖥳 اذا كنت تريد ربح نقاط \n 𖥳 ارسل الالعاب وابدأ اللعب ! ') 
+send(msg.chat_id_,msg.id_,' 𖥳 ليس لديك نقاط في الالعاب\n 𖥳 اذا كنت تريد ربح نقاط \n ?? ارسل الالعاب وابدأ اللعب ! ') 
 else
 local NUM_GAMES = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_)
 if tonumber(NUMPY) > tonumber(NUM_GAMES) then
