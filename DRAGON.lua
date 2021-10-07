@@ -3323,8 +3323,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝗛𝗥𝗕𝗬',url="t.me/J_P_T"}
-{{text = 'مححمـد',url="t.me/RR9R7"},
+{{text = '𝗛𝗥𝗕𝗬',url="t.me/J_P_T"}},
+{{text = 'مححمـد',url="t.me/RR9R7"}},
 {{text = '𝑺𝑶𝑼𝑹𝑪𝑬 𝗛𝗥𝗕𝗬', url="t.me/XTGXX"}},
 {{text = 'أضغط لاضافه ألبوت لمجموعتك 𖥳' ,url="t.me/"..dofile("./Banda.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -15654,7 +15654,7 @@ local List = {
 [[
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
- ??𝚃𝙰 𓄹𓄼 #stast 
+ 𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
  𝗖𝗛 - ↝@XTGXX↜ ??.
 ]],
