@@ -977,8 +977,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المطور حربي', url="t.me/J_P_T"}}
-{{text = 'كروب حـربي', url="t.me/syrians_14"}},
+{{text = 'المطور حربي', url="t.me/J_P_T"}},
+{{text = 'كروب حـربي', url="t.me/syrians_14"}}, 
 {{text = 'حساب حربي',url="t.me/J_P_T"}}, 
 
 }
@@ -3466,7 +3466,7 @@ return false
 end
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub('-100',''), offset_ = 0,limit_ = 200
 },function(ta,HRBY)
-local t = "\n☆ "..ttag.." \n⩹━━━━━❲𖥳 𝗛𝗥??𝗬 𖥳❳━━━━━⩺\n"
+local t = "\n☆ "..ttag.." \n⩹━━━━━❲𖥳 𝗛????𝗬 𖥳❳━━━━━⩺\n"
 x = 0
 local list = HRBY.members_
 for k, v in pairs(list) do
@@ -15654,7 +15654,7 @@ local List = {
 [[
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
- 𝚂𝚃𝙰 𓄹𓄼 #stast 
+ 𝚂𝚃?? 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
  𝗖𝗛 - ↝@XTGXX↜ ??.
 ]],
