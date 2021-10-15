@@ -6007,10 +6007,10 @@ end,nil)
 end
 end
 
-if text == "معلوماتي" and not bot_data:get(bot_id..'Bot:Id'..msg.chat_id_) then
+if text == "معلوماتي" and not bot_data:get(ban_id..'Bot:Id'..msg.chat_id_) then
 tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
 local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-local Msguser = tonumber(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1) 
+local Msguser = tonumber(bot_data:get(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
 local msg_id = msg.id_/2097152/0.5
 local Text = "معلوماتك"
 keyboard = {} 
@@ -16405,7 +16405,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
-𝐓??• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
+𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒??𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
