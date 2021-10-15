@@ -6016,8 +6016,8 @@ local Text = "معلوماتك"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'معرفك '..data.username_,url="t.me/"..data.username_}},
-{{text = 'رتبتك '..rtp, url="t.me/"..data.username_"}},
-{{text = 'رسائلك '..Msguser, url="t.me/"..data.username_"}},
+{{text = 'رتبتك '..rtp, url="t.me/"..data.username_}},
+{{text = 'رسائلك '..Msguser, url="t.me/"..data.username_}},
 {{text = 'ايديك '..msg.sender_user_id_, url="t.me/"..data.username_"}}, 
 {{text = 'البايو '..getbio(msg.sender_user_id_), url="t.me/"..data.username_"}}, 
 }
