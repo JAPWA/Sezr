@@ -170,7 +170,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JABWA/Saidi/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JAPWA/TEST/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1873,7 +1873,7 @@ echo ' ◤━──━❲𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐀𝐈𝐃𝐈❳━─�
 end
 if text == 'تحديث السورس صعيدي' and Devban(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/TEST/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -7273,7 +7273,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if Devban(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/JABWA/Saidi/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/JAPWA/TEST/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -7311,7 +7311,7 @@ t = " ☽ الملف  ⇇ "..file.."\n ☽ تم تعطيل ملف \n"
 else
 t = " ☽ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JABWA/Saidi/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/TEST/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -7331,7 +7331,7 @@ t = " ☽ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ☽ الملف  ⇇ "..file.."\n ☽ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JABWA/Saidi/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/JAPWA/TEST/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -16405,7 +16405,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
-𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
+𝐓??• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒??𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
@@ -21645,7 +21645,7 @@ return false
 end
 local Text =' ☽ تم تحديث السورس'
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/TEST/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
@@ -21664,7 +21664,7 @@ return false
 end
 local Text =' ☽ تم تحديث الملفات'
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/JAPWA/TEST/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
