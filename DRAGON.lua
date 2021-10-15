@@ -6015,11 +6015,11 @@ local msg_id = msg.id_/2097152/0.5
 local Text = "معلوماتك"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'معرفك 🌝💙'..data.username_,url="t.me/ahmedyad200"}},
-{{text = 'رتبتك 🌝💙'..rtp, url="t.me/ahmedyad200"}},
-{{text = 'رسائلك 🌝💙'..Msguser, url="t.me/ahmedyad200"}},
-{{text = 'ايديك 🌝💙'..msg.sender_user_id_, url="t.me/ahmedyad200"}}, 
-{{text = 'البايو 🌝💙'..getbio(msg.sender_user_id_), url="t.me/ahmedyad200"}}, 
+{{text = 'معرفك '..data.username_,url="t.me/..username"}},
+{{text = 'رتبتك '..rtp, url="t.me/..username"}},
+{{text = 'رسائلك '..Msguser, url="t.me/..username"}},
+{{text = 'ايديك '..msg.sender_user_id_, url="t.me/..username"}}, 
+{{text = 'البايو '..getbio(msg.sender_user_id_), url="t.me/..username"}}, 
 }
 local function getpro(extra, result, success)
 if result.photos_[0] then
@@ -16404,8 +16404,8 @@ Msᴀɢ ~ #msgs
 𓄼 𝗖𝗛 - 『@S_a_i_d_i』 ☽ 
 ]],
 [[
-𝐓𝐓• 𝐘𝐎𝐔?? 𝐈𝐃 𖠰 #id .
-𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
+𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
+𝐓𝐓• 𝐌??𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒??𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
