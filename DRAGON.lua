@@ -4078,9 +4078,9 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '◤━─━❲`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´❳━─━◥', url="t.me/S_a_i_d_i"}},
-{{text = '◤ مصري ◢', callback_data="/masryy"},{text = '◤ سعودي ◢', callback_data="/syody"}},  
-{{text = '◤ سوري ◢', callback_data="/jsbude"},{text = '◤ عراقي ◢', callback_data="/isbsusvsu"}},  
-{{text = '◤ انجليزي ◢', callback_data="/gqjiususy"}},
+{{text = '◢ مصري ◤', callback_data="/masryy"},{text = '◢ سعودي ◤', callback_data="/syody"}},  
+{{text = '◢ سوري ◤', callback_data="/jsbude"},{text = '◢ عراقي ◤', callback_data="/isbsusvsu"}},  
+{{text = '◢ انجليزي ◤', callback_data="/gqjiususy"}},
 {{text = '◤━─━❲`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´❳━─━◥', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -22110,6 +22110,7 @@ DeleteMessage(Chat_id,{[0] = Msg_id})
 https.request("https://api.telegram.org/bot"..token..'/senddocument?chat_id=' .. Chat_id .. '&document=https://t.me/agklpoj/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
+
 --------اغاني مصري--------
 if Text == '/masryy' then
 local Teext =[[
