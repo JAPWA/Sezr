@@ -14261,13 +14261,13 @@ local tessttm = 'المشتركين ⤌ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "t.me/"..Namebot.."},
+{text = tessttmos, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
-{text = tessttmo, url = "t.me/"..data.username_}},
+{text = tessttmo, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
-{text = tessttm, url = "t.me/"..data.username_}},
+{text = tessttm, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
