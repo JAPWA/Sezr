@@ -380,6 +380,10 @@ elseif bot_data:sismember(ban_id.."Dev:ban:2", user_id) then
 var = "المطور الاساسي²"  
 elseif bot_data:sismember(ban_id.."msa3d:ban", user_id) then
 var = "مساعد"
+elseif bot_data:sismember(ban_id.."SirSudoGp", user_id) then
+var = "ثانوي مجموعه"
+elseif bot_data:sismember(ban_id.."SudoBotGp", user_id) then
+var = "مطور مجموعه"
 elseif tonumber(user_id) == tonumber(ban_id) then  
 var = 'البوت'
 elseif bot_data:sismember(ban_id..'Sudo:User', user_id) then
@@ -8544,63 +8548,125 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = SUDO, offset_ = 0, lim
 end,nil)
 end
 end
------------------------------------------------------------------------- adddev2 sudog
-if text == ("رفع مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
-function Function_DRAGON(extra, result, success)
-bot_data:sadd(ban_id.."Dev:ban:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply"," ☽ تم ترقيته مطور ثانوي في البوت")  
+------------------------------------------------------------------------ adddevsoudogp2 
+if text == ("رفع مطور مجموعه") and tonumber(msg.reply_to_message_id_) ~= 0 and msa3d(msg) and  SirSudoGp(msg)  then
+function Function_ANUBIS(extra, result, success)
+bot_data:sadd(ban_id.."SudoBotGp", result.sender_user_id_)
+Reply_Status(msg,result.sender_user_id_,"reply","𖢅⤈  تم ترقيته مطور مجموعه في البوت")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_ANUBIS, nil)
 return false 
 end
-if text and text:match("^رفع مطور ثانوي @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع مطور ثانوي @(.*)$")
-function Function_DRAGON(extra, result, success)
+if text and text:match("^رفع مطور مجموعه @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مطور مجموعه @(.*)$")
+function Function_ANUBIS(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
-send(msg.chat_id_,msg.id_," ☽ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+send(msg.chat_id_,msg.id_,"𖢅⤈  عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
+return false 
+end      
+bot_data:sadd(ban_id.."SudoBotGp", result.id_)
+Reply_Status(msg,result.id_,"reply","𖢅⤈  تم ترقيته مطور مجموعه في البوت")  
+else
+send(msg.chat_id_, msg.id_,"𖢅⤈  لا يوجد حساب بهاذا المعرف")
+end
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_ANUBIS, nil)
+return false 
+end
+if text and text:match("^رفع مطور مجموعه (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مطور مجموعه (%d+)$")
+bot_data:sadd(ban_id.."SudoBotGp", userid)
+Reply_Status(msg,userid,"reply","𖢅⤈  تم ترقيته مطور مجموعه في البوت")  
+return false 
+end
+if text == ("تنزيل مطور مجموعه") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+function Function_ANUBIS(extra, result, success)
+bot_data:srem(ban_id.."SudoBotGp", result.sender_user_id_)
+Reply_Status(msg,result.sender_user_id_,"reply","𖢅⤈  تم تنزيله من المطور مجموعه")  
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_ANUBIS, nil)
+return false 
+end
+if text and text:match("^تنزيل مطور مجموعه @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل مطور مجموعه @(.*)$")
+function Function_ANUBIS(extra, result, success)
+if result.id_ then
+bot_data:srem(ban_id.."SudoBotGp", result.id_)
+Reply_Status(msg,result.id_,"reply","𖢅⤈  تم تنزيله من المطور مجموعه")  
+else
+send(msg.chat_id_, msg.id_,"𖢅⤈  لا يوجد حساب بهاذا المعرف")
+end
+end
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_ANUBIS, nil)
+return false
+end  
+if text and text:match("^تنزيل مطور مجموعه (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل مطور مجموعه (%d+)$")
+bot_data:srem(ban_id.."SudoBotGp", userid)
+Reply_Status(msg,userid,"reply","𖢅⤈ تم تنزيله من المطور مجموعه")  
+return false 
+end
+if text ==('رفع مطور مجموعه') and not SirSudoGp(msg) then
+send(msg.chat_id_, msg.id_, 1, '𖢅⤈ هذا الامر للمطورين فقط', 1, 'md')
+end
+------------------------------------------------------------------------ adddevsoudogp2 sudog
+if text == ("رفع ثانوي عام") and tonumber(msg.reply_to_message_id_) ~= 0 and msa3d(msg) then
+function Function_ANUBIS(extra, result, success)
+bot_data:sadd(ban_id.."Dev:ban:2", result.sender_user_id_)
+Reply_Status(msg,result.sender_user_id_,"reply","𖢅⤈  تم ترقيته ثانوي عام في البوت")  
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_ANUBIS, nil)
+return false 
+end
+if text and text:match("^رفع ثانوي عام @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع ثانوي عام @(.*)$")
+function Function_ANUBIS(extra, result, success)
+if result.id_ then
+if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+send(msg.chat_id_,msg.id_,"𖢅⤈  عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
 bot_data:sadd(ban_id.."Dev:ban:2", result.id_)
-Reply_Status(msg,result.id_,"reply"," ☽ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,result.id_,"reply","𖢅⤈  تم ترقيته ثانوي عام في البوت")  
 else
-send(msg.chat_id_, msg.id_," ☽ لا يوجد حساب بهاذا المعرف")
+send(msg.chat_id_, msg.id_,"𖢅⤈  لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_ANUBIS, nil)
 return false 
 end
-if text and text:match("^رفع مطور ثانوي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع مطور ثانوي (%d+)$")
+if text and text:match("^رفع ثانوي عام (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع ثانوي عام (%d+)$")
 bot_data:sadd(ban_id.."Dev:ban:2", userid)
-Reply_Status(msg,userid,"reply"," ☽ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,userid,"reply","𖢅⤈  تم ترقيته ثانوي عام في البوت")  
 return false 
 end
-if text == ("تنزيل مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
-function Function_DRAGON(extra, result, success)
+if text == ("تنزيل ثانوي عام") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+function Function_ANUBIS(extra, result, success)
 bot_data:srem(ban_id.."Dev:ban:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply"," ☽ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.sender_user_id_,"reply","𖢅⤈  تم تنزيله من الثانوي عامين")  
 end
-tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_ANUBIS, nil)
 return false 
 end
-if text and text:match("^تنزيل مطور ثانوي @(.*)$") and SudoBot(msg) then
-local username = text:match("^تنزيل مطور ثانوي @(.*)$")
-function Function_DRAGON(extra, result, success)
+if text and text:match("^تنزيل ثانوي عام @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل ثانوي عام @(.*)$")
+function Function_ANUBIS(extra, result, success)
 if result.id_ then
 bot_data:srem(ban_id.."Dev:ban:2", result.id_)
-Reply_Status(msg,result.id_,"reply"," ☽ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.id_,"reply","𖢅⤈  تم تنزيله من الثانوي عامين")  
 else
-send(msg.chat_id_, msg.id_," ☽ لا يوجد حساب بهاذا المعرف")
+send(msg.chat_id_, msg.id_,"𖢅⤈  لا يوجد حساب بهاذا المعرف")
 end
 end
-tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
+tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_ANUBIS, nil)
 return false
 end  
-if text and text:match("^تنزيل مطور ثانوي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^تنزيل مطور ثانوي (%d+)$")
+if text and text:match("^تنزيل ثانوي عام (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل ثانوي عام (%d+)$")
 bot_data:srem(ban_id.."Dev:ban:2", userid)
-Reply_Status(msg,userid,"reply"," ☽ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,userid,"reply","𖢅⤈  تم تنزيله من الثانوي عامين")  
 return false 
 end
 if text == ("الثانوين") and SudoBot(msg) then
@@ -8646,6 +8712,18 @@ local keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 send_inline_key(msg.chat_id_,"*مـرحبـا بـك فـي قائـمه التحكم في العضـو فقط اضغط علي الامر 𖢅⤈ .*",nil,keyboard,msg_id)
+end
+tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
+return false
+end
+if text == ("رفع مطور ثانوي") and SudoBot(msg) then
+function start_function(extra, result, success)
+local keyboard = {
+{{text ='مطور ثانوي عام',callback_data=msg.sender_user_id_.."Devban"..result.sender_user_id_},{text ='مطور ثانوي مجموعه',callback_data=msg.sender_user_id_.."SirSudoGp"..result.sender_user_id_}},
+{{text = '`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´', url="t.me/S_a_i_d_i"}},
+}
+local msg_id = msg.id_/2097152/0.5
+send_inline_key(msg.chat_id_,"*يمكنك التحكم عن طريق الازرار  بالاسفل  𖢅⤈ .*",nil,keyboard,msg_id)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
@@ -15706,7 +15784,7 @@ local List = {
 [[
 ??🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
-🇪?? - 𝄬 ᴵᴰ . #id 𓃠
+🇪?? - ?? ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 🇪🇬 - 𝄬 𝗖?? - 『@S_a_i_d_i』 ☽ .
@@ -19321,7 +19399,7 @@ local Teext =[[
 الاعمال الملائمة : كيميائيين- أطباء-محققين- أخصائيي تغذية- أطباء بيطريين- مدراء- مقاولين
 ايجابيات برج العذراء : متواضع، خجول، دقيق، يمكن الاعتماد عليه، عملي، مجتهد، ذكي ويميل إلى التحليل
 سلبيات برج العذراء : سريع الانزعاج، كثير القلق، كثير الانتقاد، قاسي، يسعى نحو الكمالية ومحافظ
- ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
+ ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 ??❳⊷━━━━⩺
 
 ]]
 keyboard = {} 
