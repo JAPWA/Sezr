@@ -4071,6 +4071,22 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/33&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
+if text == 'اغاني' or text == 'الاغاني' or text == 'اغنيه' then
+local Text = [[
+
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار نوع الاغنيه . .🎀🥺', url="t.me/errrrrrro"}},
+{{text = '• مصري', callback_data="/masryy"},{text = '• سعودي', callback_data="/syody"}},  
+{{text = '• سوري', callback_data="/jsbude"},{text = '• عراقي', callback_data="/isbsusvsu"}},  
+{{text = '• انجليزي', callback_data="/gqjiususy"}},
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/U_AFLAM/114&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == 'مصطفي' or text == 'مصطفي احمد' or text == 'المبرمج مصطفي' or text == 'صاحب سورس' or text == 'مبرمج السورس' or text == 'الشيخ ديشا' or text == 'الشيخ مصطفى' then
 local Text = [[
 [𝗐ᴇʟᴄᴏᴍᴇ ᴛᴏ ʏᴏᴢᴀʀᴀᴛ ᴍᴏѕᴛᴀғᴀ](http://t.me/J_A_B_W_A)
@@ -15882,7 +15898,7 @@ local List = {
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
-⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
+⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ??
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - 『@S_a_i_d_i』 💞.
@@ -22093,6 +22109,283 @@ keyboard.inline_keyboard = {
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 https.request("https://api.telegram.org/bot"..token..'/senddocument?chat_id=' .. Chat_id .. '&document=https://t.me/agklpoj/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+end
+--------اغاني مصري--------
+if Text == '/masryy' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار نوع الاغاني . .🎀🥺', url="t.me/errrrrrro"}},
+{{text = '「عمار حسني」', callback_data="/masryy2"},{text = '「نور الدين」', callback_data="/norlden"},{text = '「شواحه」', callback_data="/ssd"},{text = '「شاكاي」', callback_data="/vvbg"}},  
+{{text = '「بابلو」', callback_data="/isuu"}},  
+{{text = '「احمد كامل」', callback_data="/gqpy"},{text = '「عصام صاصا」', callback_data="/ssan"},{text = '「ليجي سي」', callback_data="/lege"},{text = '「مروان موسي」', callback_data="/musaa"}}, 
+{{text = '「احمد موزه」', callback_data="/jsbh"}},  
+{{text = '「عفروتو」', callback_data="/afro"},{text = '「ابيوسف」', callback_data="/abusf"},{text = '「تامر حسني」', callback_data="/tmora"},{text = '「حماقي」', callback_data="/hmaky"}}, 
+{{text = '「ادهم نابلسي」', callback_data="/nbls"},{text = '「عمرو دياب」', callback_data="/moraa"}},
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب احمد كامل--
+if Text == '/gqpy' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「مبقتش اخاف」 ' , callback_data="/gqpy1"},{text = '「قولي」', callback_data="/gqpy2"}},  
+{{text =' 「متزعليش」' , callback_data="/gqpy3"},{text = '「كان في طفل」', callback_data="/gqpy4"}},  
+{{text =' 「انا رايح」' , callback_data="/gqpy5"},{text = '「مش شرط」', callback_data="/gqpy6"}},  
+{{text =' 「كانسر」' , callback_data="/gqpy7"},{text = '「يا ليل」', callback_data="/gqpy8"}},  
+{{text =' 「جاوبنا」' , callback_data="/gqpy9"},{text = '「زمن المعجزات」', callback_data="/gqpy10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+-- كيب بابلو--
+if Text == '/isuu' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「برنس」' , callback_data="/isuu1"},{text = '「غابه」 ', callback_data="/isuu2"}},  
+{{text =' 「كنترول」' , callback_data="/isuu3"},{text = '「جنابو」', callback_data="/isuu4"}},  
+{{text =' 「دون」' , callback_data="/isuu5"},{text = '「عوده」', callback_data="/isuu6"}},  
+{{text =' 「نكسه」' , callback_data="/isuu7"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+-- كيب احمد موزه--
+if Text == '/jsbh' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「انا نفسي ثم نفسي」' , callback_data="/ssdd1"},{text = '「بسعر السوق」 ', callback_data="/ssdd2"}},  
+{{text =' 「قلبي بيرضي」' , callback_data="/ssdd3"},{text = '「صحبه هندي」 ', callback_data="/ssdd4"}},  
+{{text =' 「مفيش واحد سالك」' , callback_data="/ssdd5"},{text = '「وقت المصالح」', callback_data="/ssdd6"}},  
+{{text =' 「باي باي」' , callback_data="/ssdd7"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب شواحه---------
+if Text == '/ssd' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「سكينه سلك」' , callback_data="/ssdd1"},{text = '「سحابه مطرايه」 ', callback_data="/ssdd2"}},  
+{{text =' 「اخويا مش صحبي」' , callback_data="/ssdd3"},{text = '「مفيش مني」 ', callback_data="/ssdd4"}},  
+{{text =' 「لعبو بيا」' , callback_data="/ssdd5"},{text = '「فاجر وجن」', callback_data="/ssdd6"}},  
+{{text =' 「بارد ممل」' , callback_data="/ssdd7"},{text = '「يسطا」', callback_data="/ssdd8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب عمار------------
+if Text == '/masryy2' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • برشام منوم' , callback_data="/amar1"},{text = '• بتيجي فبالي ', callback_data="/amar2"}},  
+{{text =' • طفره' , callback_data="/amar3"},{text = '• بساط ', callback_data="/amar5"}},  
+{{text =' • هلوسه' , callback_data="/amar6"},{text = '• ترام ', callback_data="/amar7"}},  
+{{text =' • اخر عازف' , callback_data="/amar8"},{text = '• مسوخ ', callback_data="/amar9"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+--كيب عصام صاصا---
+if Text == '/ssan' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「شايف عيال محدثه」' , callback_data="/ssan1"},{text = '「عارفك يجرح」', callback_data="/ssan2"}},  
+{{text ='「في يوم فراقك」 ' , callback_data="/ssan3"},{text = '「دنيا ظيطه」', callback_data="/ssan4"}},  
+{{text =' 「انا بعشقني اوي」' , callback_data="/ssan5"},{text = '「العبيط جاي يظيط」', callback_data="/ssan6"}},  
+{{text =' 「الاخصام ضمو لبعض」' , callback_data="/ssan7"},{text = '「معايا انا متجيش」 ', callback_data="/ssan8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-------------------كيب شاكاي------------
+if Text == '/vvbg' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「بسكوته」' , callback_data="/vvbg1"},{text = '「ادلعي يموزه」 ', callback_data="/vvbg2"}},  
+{{text =' 「ناس ملاعين」' , callback_data="/vvbg3"},{text = '「كله رايح」 ', callback_data="/vvbg5"}},  
+{{text =' 「تعالي نحلل」' , callback_data="/vvbg6"},{text = '「يا مقسطاتي」', callback_data="/vvbg7"}},  
+{{text =' 「الظلم حرام」' , callback_data="/vvbg8"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+----نور الدبن-------
+if Text == '/norlden' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text =' • ملكاي مكان جوانا' , callback_data="/norrrr1"},{text = '• ماضي وراح ', callback_data="/norrrr2"}},  
+{{text =' • مالقيتك' , callback_data="/norrrr3"},{text = '• ليلي', callback_data="/norrrr4"}},  
+{{text =' • خانو لي' , callback_data="/norrrr5"},{text = '• دموع الروح', callback_data="/norrrr6"}},  
+{{text =' • سلطانك' , callback_data="/norrrr7"},{text = '• ادماني', callback_data="/norrrr8"}},  
+{{text =' • كسرت جناحي' , callback_data="/norrrr9"},{text = '• انتي', callback_data="/norrrr10"}},  
+{{text =' • انسيني' , callback_data="/norrrr11"},{text = '• حبيتك انا', callback_data="/norrrr12"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب ليجي-----------
+if Text == '/lege' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • اتنين بليل' , callback_data="/legcy1"},{text = '• عرفه ', callback_data="/legcy2"}},  
+{{text =' • وسع' , callback_data="/legcy3"},{text = '• يخويا ', callback_data="/legcy4"}},  
+{{text =' • روشته' , callback_data="/legcy5"},{text = '• على حسابي ', callback_data="/legcy6"}},  
+{{text =' • تاني' , callback_data="/legcy7"},{text = '• مفيش مانع ', callback_data="/legcy8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب مروان-----------
+if Text == '/musaa' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • علي عيني' , callback_data="/maro1"},{text = '• تيسلا ', callback_data="/maro2"}},  
+{{text =' • البوصله ضاعت' , callback_data="/maro3"},{text = '• نهايه العالم ', callback_data="/maro5"}},  
+{{text =' • دروجبا' , callback_data="/maro6"},{text = '• نجوم باريس ', callback_data="/maro7"}},  
+{{text =' • فرعون' , callback_data="/maro8"},{text = '• مكهرب ', callback_data="/maro9"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب ابيوسف--
+if Text == '/abusf' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「باشا اعتمد」' , callback_data="/absef1"},{text = '「حرب」 ', callback_data="/absef5"}},  
+{{text =' 「صولجان」' , callback_data="/absef2"},{text = '「الخيال」', callback_data="/absef6"}},  
+{{text =' 「كان ف دماغي」' , callback_data="/absef3"},{text = '「سيستم」', callback_data="/absef7"}},  
+{{text =' 「انترو」' , callback_data="/absef4"},{text = '「او لا لا」', callback_data="/absef8"}},  
+{{text =' 「رجوع」' , callback_data="/masryy0"}},
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب عفروتو --
+if Text == '/afro' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「انجي」 ' , callback_data="/frot1"},{text = '「بكار」', callback_data="/frot6"}},  
+{{text =' 「انتو اعدائي」' , callback_data="/frot2"},{text = '「كاسين」', callback_data="/frot7"}},  
+{{text =' 「مظلات」' , callback_data="/frot3"},{text = '「راح مني」', callback_data="/frot8"}},  
+{{text =' 「سجاره」' , callback_data="/frot4"},{text = '「متفقين」', callback_data="/frot9"}},  
+{{text =' 「مش بالحظوظ」' , callback_data="/frot5"},{text = '「ناميجا」', callback_data="/frot10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+-- كيب نابلسي --
+if Text == '/nbls' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「خايف」 ' , callback_data="/nbus1"},{text = '「حدك بالكون」', callback_data="/nbus6"}},  
+{{text =' 「حان الان」' , callback_data="/nbus2"},{text = '「توعدنا」', callback_data="/nbus7"}},  
+{{text =' 「ما عندي استعداد」' , callback_data="/nbus3"},{text = '「كيف بحبك هيك」', callback_data="/nbus8"}},  
+{{text =' 「نور عيني」' , callback_data="/nbus4"},{text = '「نسخه منك」', callback_data="/nbus9"}},  
+{{text =' 「بتعرف شعور」' , callback_data="/nbus5"},{text = '「مشتاق」', callback_data="/nbus10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب تامر-----------
+if Text == '/tmora' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • اختراع' , callback_data="/tmora1"},{text = '• صوتك ', callback_data="/tmora5"}},  
+{{text =' • روح قلبي' , callback_data="/tmora2"},{text = '• مش تمثال ', callback_data="/tmora6"}},  
+{{text =' • يا تاعبني' , callback_data="/tmora3"},{text = '• بحبك ', callback_data="/tmora7"}},  
+{{text =' • نفس الحنين' , callback_data="/tmora4"},{text = '•علي حسابي ', callback_data="/tmora8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب عمرو-----------
+if Text == '/moraa' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • وياه' , callback_data="/dyab1"},{text = '• قالك ندم ', callback_data="/dyab5"}},  
+{{text =' • يانا يالا' , callback_data="/dyab2"},{text = '• جماله ', callback_data="/dyab6"}},  
+{{text =' • ده لو اتساب' , callback_data="/dyab3"},{text = '• يتعلمو ', callback_data="/dyab7"}},  
+{{text =' • جنب حبيبي' , callback_data="/dyab4"},{text = '•وماله ', callback_data="/dyab8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب حماقي-----------
+if Text == '/hmaky' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • مش هقدر انسي' , callback_data="/hmaky1"},{text = '• عرض مستمر ', callback_data="/hmaky5"}},  
+{{text =' • يافاتني' , callback_data="/hmaky2"},{text = '• تك ', callback_data="/hmaky6"}},  
+{{text =' •مش قادر انساه' , callback_data="/hmaky3"},{text = '• عايزك تسمعني ', callback_data="/hmaky7"}},  
+{{text =' • يا نسيم' , callback_data="/hmaky4"},{text = '•ردودو غريبه ', callback_data="/hmaky8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
