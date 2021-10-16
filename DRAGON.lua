@@ -6451,7 +6451,16 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ffadi8/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
+if text == "طبيعه" and not  bot_data:get(ban_id.."sing:for:me"..msg.chat_id_) then 
+ban = math.random(1,24); 
+local Text ='دوس علي الزرار لاختيار طبيعه أخري 🌝💙' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'طبيعه أخري', callback_data="/asr18"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/TIMO_JABWA/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
 if text == "تفعيل تنظيف التلقائي" and BasicConstructor(msg)  then
 bot_data:set(ban_id.."LoMsg"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, ' ☽  مـن قبـل  ⇇ [『'..Rutba(msg.sender_user_id_,msg.chat_id_)..'』](T.ME/'..(data.username_ or 'textchuser')..') \n ☽ تم تفعيل التنظيف التلقائي ')
@@ -21852,6 +21861,18 @@ keyboard.inline_keyboard = {
 }
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. Chat_id .. '&photo=https://t.me/ffadi8/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+if Text == '/asr18' then
+Text = 'مرحبا اليك طبيعه بالصور 🌝💙'
+ban = math.random(1,24); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'طبيعه أخري', callback_data="/asr18"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. Chat_id .. '&photo=https://t.me/TIMO_JABWA/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if Text == '/ljljkj' then
 Text = 'مرحبا اليك تويت بالصور 🌝💙'
