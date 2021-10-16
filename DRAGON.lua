@@ -14261,7 +14261,7 @@ local tessttm = 'المشتركين ⤌ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "t.me/"..Namebot..'}},
+{text = tessttmos, url = "t.me/"..Namebot.."},
 },
 {
 {text = tessttmo, url = "t.me/"..data.username_}},
