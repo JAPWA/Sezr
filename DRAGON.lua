@@ -8648,26 +8648,17 @@ if text == ("مسح الثانوين") and SudoBot(msg) then
 bot_data:del(ban_id.."Dev:ban:2")
 send(msg.chat_id_, msg.id_, "\n ☽ تم مسح قائمة المطورين الثانوين  ")
 end
-if (text == 'تحكم الرتبه' or text == 'تحكم الرتب' or text == 'رفع' or text == 'تنزيل' or text == 'رفع رتبه' or text == 'تنزيل رتبه') and msg.reply_to_message_id_ and Mod(msg) then
-if AddChannel(msg.sender_user_id_) == false then
-local S_a_i_d_i = database:get(bot_id..'text:ch:user')
-if S_a_i_d_i then
-send(msg.chat_id_, msg.id_,'['..S_a_i_d_i..']')
-else
-send(msg.chat_id_, msg.id_,' ☽ لا تستطيع استخدام البوت \n ☽ يرجى الاشتراك بالقناه اولا \n ☽ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
+if text == ("تحكم") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) and GetChannelMember(msg) then  
 function start_function(extra, result, success)
-local Text = 'ماذا تريد ان تفعل عزيزي '..Rutba(msg.sender_user_id_,msg.chat_id_)
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = 'تنزيل رتبه', callback_data="/YYYBD:t7kmrtb1 "..result.sender_user_id_},{text = 'رفع رتبه', callback_data="/YYYBD:t7kmrtb2 "..result.sender_user_id_},
-},
+local keyboard = {
+{{text ='رفع رتبه',callback_data=msg.sender_user_id_.."UpS"..result.sender_user_id_},{text ='تنزيل رتبه',callback_data=msg.sender_user_id_.."unUpS"..result.sender_user_id_}},
+{{text ='حظر',callback_data=msg.sender_user_id_.."been"..result.sender_user_id_},{text ='الغاء حظر',callback_data=msg.sender_user_id_.."unbeen"..result.sender_user_id_}},
+{{text ='كتم',callback_data=msg.sender_user_id_.."Mut"..result.sender_user_id_},{text ='الغاء كتم',callback_data=msg.sender_user_id_.."unMut"..result.sender_user_id_}},
+{{text ='تقييد',callback_data=msg.sender_user_id_.."restrict"..result.sender_user_id_},{text ='الغاء تقييد',callback_data=msg.sender_user_id_.."unrestrict"..result.sender_user_id_}},
+{{text = '◤━─━❲`sᴏᴜʀᴄᴇ sᴀɪᴅɪ´❳━─━◥', url="t.me/S_a_i_d_i"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+send_inline_key(msg.chat_id_,"*مـرحبـا بـك فـي قائـمه التحكم في العضـو فقط اضغط علي الامر 𖢅⤈ .*",nil,keyboard,msg_id)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
