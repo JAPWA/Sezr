@@ -13631,16 +13631,16 @@ end
 if text == "بوت" then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'صعيدي') 
 local DRAGON_Msg = { 
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
+'اسمي  '..Namebot..' يا قلبي 😍💜',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🌹',
-'اسمي  '..Namebot..' يا قمر 🐭🤍',
-'اسمي  '..Namebot..' يامزه 🥺❤️',
+'اسمي  '..Namebot..' يا عمري 🥰🤍',
+'اسمي  '..Namebot..' يا قمر 🌙🥀',
+'اسمي  '..Namebot..' يا مزه 🌝💙',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
-'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
+'اسمي الكيوت '..Namebot..' 🌝💙',
+'اسمي  '..Namebot..' يا حياتي 🌝💙',
+'اسمي  '..Namebot..' يوتكه 🙈💙',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -15452,7 +15452,7 @@ local List = {
 ]],
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
-🌯 ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
+🌯 ¦✙• 𝐦𝐬?? ➢ ⁞  #msgs  📝
 🌯 ¦✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
 🌯 ¦ 𝗖𝗛 - 『@S_a_i_d_i』 ☽ .
