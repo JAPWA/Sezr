@@ -19685,7 +19685,283 @@ keyboard.inline_keyboard = {
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
+--------اغاني مصري--------
+if Text == '/masryy' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار نوع الاغاني . .🎀🥺', url="t.me/errrrrrro"}},
+{{text = '「عمار حسني」', callback_data="/masryy2"},{text = '「نور الدين」', callback_data="/norlden"},{text = '「شواحه」', callback_data="/ssd"},{text = '「شاكاي」', callback_data="/vvbg"}},  
+{{text = '「بابلو」', callback_data="/isuu"}},  
+{{text = '「احمد كامل」', callback_data="/gqpy"},{text = '「عصام صاصا」', callback_data="/ssan"},{text = '「ليجي سي」', callback_data="/lege"},{text = '「مروان موسي」', callback_data="/musaa"}}, 
+{{text = '「احمد موزه」', callback_data="/jsbh"}},  
+{{text = '「عفروتو」', callback_data="/afro"},{text = '「ابيوسف」', callback_data="/abusf"},{text = '「تامر حسني」', callback_data="/tmora"},{text = '「حماقي」', callback_data="/hmaky"}}, 
+{{text = '「ادهم نابلسي」', callback_data="/nbls"},{text = '「عمرو دياب」', callback_data="/moraa"}},
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب احمد كامل--
+if Text == '/gqpy' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「مبقتش اخاف」 ' , callback_data="/gqpy1"},{text = '「قولي」', callback_data="/gqpy2"}},  
+{{text =' 「متزعليش」' , callback_data="/gqpy3"},{text = '「كان في طفل」', callback_data="/gqpy4"}},  
+{{text =' 「انا رايح」' , callback_data="/gqpy5"},{text = '「مش شرط」', callback_data="/gqpy6"}},  
+{{text =' 「كانسر」' , callback_data="/gqpy7"},{text = '「يا ليل」', callback_data="/gqpy8"}},  
+{{text =' 「جاوبنا」' , callback_data="/gqpy9"},{text = '「زمن المعجزات」', callback_data="/gqpy10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
 
+-- كيب بابلو--
+if Text == '/isuu' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「برنس」' , callback_data="/isuu1"},{text = '「غابه」 ', callback_data="/isuu2"}},  
+{{text =' 「كنترول」' , callback_data="/isuu3"},{text = '「جنابو」', callback_data="/isuu4"}},  
+{{text =' 「دون」' , callback_data="/isuu5"},{text = '「عوده」', callback_data="/isuu6"}},  
+{{text =' 「نكسه」' , callback_data="/isuu7"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+-- كيب احمد موزه--
+if Text == '/jsbh' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「انا نفسي ثم نفسي」' , callback_data="/ssdd1"},{text = '「بسعر السوق」 ', callback_data="/ssdd2"}},  
+{{text =' 「قلبي بيرضي」' , callback_data="/ssdd3"},{text = '「صحبه هندي」 ', callback_data="/ssdd4"}},  
+{{text =' 「مفيش واحد سالك」' , callback_data="/ssdd5"},{text = '「وقت المصالح」', callback_data="/ssdd6"}},  
+{{text =' 「باي باي」' , callback_data="/ssdd7"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب شواحه---------
+if Text == '/ssd' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「سكينه سلك」' , callback_data="/ssdd1"},{text = '「سحابه مطرايه」 ', callback_data="/ssdd2"}},  
+{{text =' 「اخويا مش صحبي」' , callback_data="/ssdd3"},{text = '「مفيش مني」 ', callback_data="/ssdd4"}},  
+{{text =' 「لعبو بيا」' , callback_data="/ssdd5"},{text = '「فاجر وجن」', callback_data="/ssdd6"}},  
+{{text =' 「بارد ممل」' , callback_data="/ssdd7"},{text = '「يسطا」', callback_data="/ssdd8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب عمار------------
+if Text == '/masryy2' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • برشام منوم' , callback_data="/amar1"},{text = '• بتيجي فبالي ', callback_data="/amar2"}},  
+{{text =' • طفره' , callback_data="/amar3"},{text = '• بساط ', callback_data="/amar5"}},  
+{{text =' • هلوسه' , callback_data="/amar6"},{text = '• ترام ', callback_data="/amar7"}},  
+{{text =' • اخر عازف' , callback_data="/amar8"},{text = '• مسوخ ', callback_data="/amar9"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+--كيب عصام صاصا---
+if Text == '/ssan' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「شايف عيال محدثه」' , callback_data="/ssan1"},{text = '「عارفك يجرح」', callback_data="/ssan2"}},  
+{{text ='「في يوم فراقك」 ' , callback_data="/ssan3"},{text = '「دنيا ظيطه」', callback_data="/ssan4"}},  
+{{text =' 「انا بعشقني اوي」' , callback_data="/ssan5"},{text = '「العبيط جاي يظيط」', callback_data="/ssan6"}},  
+{{text =' 「الاخصام ضمو لبعض」' , callback_data="/ssan7"},{text = '「معايا انا متجيش」 ', callback_data="/ssan8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-------------------كيب شاكاي------------
+if Text == '/vvbg' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「بسكوته」' , callback_data="/vvbg1"},{text = '「ادلعي يموزه」 ', callback_data="/vvbg2"}},  
+{{text =' 「ناس ملاعين」' , callback_data="/vvbg3"},{text = '「كله رايح」 ', callback_data="/vvbg5"}},  
+{{text =' 「تعالي نحلل」' , callback_data="/vvbg6"},{text = '「يا مقسطاتي」', callback_data="/vvbg7"}},  
+{{text =' 「الظلم حرام」' , callback_data="/vvbg8"},{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+----نور الدبن-------
+if Text == '/norlden' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text =' • ملكاي مكان جوانا' , callback_data="/norrrr1"},{text = '• ماضي وراح ', callback_data="/norrrr2"}},  
+{{text =' • مالقيتك' , callback_data="/norrrr3"},{text = '• ليلي', callback_data="/norrrr4"}},  
+{{text =' • خانو لي' , callback_data="/norrrr5"},{text = '• دموع الروح', callback_data="/norrrr6"}},  
+{{text =' • سلطانك' , callback_data="/norrrr7"},{text = '• ادماني', callback_data="/norrrr8"}},  
+{{text =' • كسرت جناحي' , callback_data="/norrrr9"},{text = '• انتي', callback_data="/norrrr10"}},  
+{{text =' • انسيني' , callback_data="/norrrr11"},{text = '• حبيتك انا', callback_data="/norrrr12"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب ليجي-----------
+if Text == '/lege' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • اتنين بليل' , callback_data="/legcy1"},{text = '• عرفه ', callback_data="/legcy2"}},  
+{{text =' • وسع' , callback_data="/legcy3"},{text = '• يخويا ', callback_data="/legcy4"}},  
+{{text =' • روشته' , callback_data="/legcy5"},{text = '• على حسابي ', callback_data="/legcy6"}},  
+{{text =' • تاني' , callback_data="/legcy7"},{text = '• مفيش مانع ', callback_data="/legcy8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب مروان-----------
+if Text == '/musaa' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • علي عيني' , callback_data="/maro1"},{text = '• تيسلا ', callback_data="/maro2"}},  
+{{text =' • البوصله ضاعت' , callback_data="/maro3"},{text = '• نهايه العالم ', callback_data="/maro5"}},  
+{{text =' • دروجبا' , callback_data="/maro6"},{text = '• نجوم باريس ', callback_data="/maro7"}},  
+{{text =' • فرعون' , callback_data="/maro8"},{text = '• مكهرب ', callback_data="/maro9"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب ابيوسف--
+if Text == '/abusf' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' 「باشا اعتمد」' , callback_data="/absef1"},{text = '「حرب」 ', callback_data="/absef5"}},  
+{{text =' 「صولجان」' , callback_data="/absef2"},{text = '「الخيال」', callback_data="/absef6"}},  
+{{text =' 「كان ف دماغي」' , callback_data="/absef3"},{text = '「سيستم」', callback_data="/absef7"}},  
+{{text =' 「انترو」' , callback_data="/absef4"},{text = '「او لا لا」', callback_data="/absef8"}},  
+{{text =' 「رجوع」' , callback_data="/masryy0"}},
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+-- كيب عفروتو --
+if Text == '/afro' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「انجي」 ' , callback_data="/frot1"},{text = '「بكار」', callback_data="/frot6"}},  
+{{text =' 「انتو اعدائي」' , callback_data="/frot2"},{text = '「كاسين」', callback_data="/frot7"}},  
+{{text =' 「مظلات」' , callback_data="/frot3"},{text = '「راح مني」', callback_data="/frot8"}},  
+{{text =' 「سجاره」' , callback_data="/frot4"},{text = '「متفقين」', callback_data="/frot9"}},  
+{{text =' 「مش بالحظوظ」' , callback_data="/frot5"},{text = '「ناميجا」', callback_data="/frot10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+
+-- كيب نابلسي --
+if Text == '/nbls' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text ='「خايف」 ' , callback_data="/nbus1"},{text = '「حدك بالكون」', callback_data="/nbus6"}},  
+{{text =' 「حان الان」' , callback_data="/nbus2"},{text = '「توعدنا」', callback_data="/nbus7"}},  
+{{text =' 「ما عندي استعداد」' , callback_data="/nbus3"},{text = '「كيف بحبك هيك」', callback_data="/nbus8"}},  
+{{text =' 「نور عيني」' , callback_data="/nbus4"},{text = '「نسخه منك」', callback_data="/nbus9"}},  
+{{text =' 「بتعرف شعور」' , callback_data="/nbus5"},{text = '「مشتاق」', callback_data="/nbus10"}},  
+{{text = '「رجوع」', callback_data="/masryy0"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب تامر-----------
+if Text == '/tmora' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • اختراع' , callback_data="/tmora1"},{text = '• صوتك ', callback_data="/tmora5"}},  
+{{text =' • روح قلبي' , callback_data="/tmora2"},{text = '• مش تمثال ', callback_data="/tmora6"}},  
+{{text =' • يا تاعبني' , callback_data="/tmora3"},{text = '• بحبك ', callback_data="/tmora7"}},  
+{{text =' • نفس الحنين' , callback_data="/tmora4"},{text = '•علي حسابي ', callback_data="/tmora8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب عمرو-----------
+if Text == '/moraa' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • وياه' , callback_data="/dyab1"},{text = '• قالك ندم ', callback_data="/dyab5"}},  
+{{text =' • يانا يالا' , callback_data="/dyab2"},{text = '• جماله ', callback_data="/dyab6"}},  
+{{text =' • ده لو اتساب' , callback_data="/dyab3"},{text = '• يتعلمو ', callback_data="/dyab7"}},  
+{{text =' • جنب حبيبي' , callback_data="/dyab4"},{text = '•وماله ', callback_data="/dyab8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
+---------كيب حماقي-----------
+if Text == '/hmaky' then
+local Teext =[[
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
+{{text =' • مش هقدر انسي' , callback_data="/hmaky1"},{text = '• عرض مستمر ', callback_data="/hmaky5"}},  
+{{text =' • يافاتني' , callback_data="/hmaky2"},{text = '• تك ', callback_data="/hmaky6"}},  
+{{text =' •مش قادر انساه' , callback_data="/hmaky3"},{text = '• عايزك تسمعني ', callback_data="/hmaky7"}},  
+{{text =' • يا نسيم' , callback_data="/hmaky4"},{text = '•ردودو غريبه ', callback_data="/hmaky8"}},  
+{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+}
+return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+end
 if Text == '/lockwelcm' then
 if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
@@ -22110,283 +22386,1789 @@ DeleteMessage(Chat_id,{[0] = Msg_id})
 https.request("https://api.telegram.org/bot"..token..'/senddocument?chat_id=' .. Chat_id .. '&document=https://t.me/agklpoj/'..ban..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
-
---------اغاني مصري--------
-if Text == '/masryy' then
-local Teext =[[
-]]
-keyboard = {} 
+--احمد نوزه-----
+if Text == '/jsbh1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(143,143); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار نوع الاغاني . .🎀🥺', url="t.me/errrrrrro"}},
-{{text = '「عمار حسني」', callback_data="/masryy2"},{text = '「نور الدين」', callback_data="/norlden"},{text = '「شواحه」', callback_data="/ssd"},{text = '「شاكاي」', callback_data="/vvbg"}},  
-{{text = '「بابلو」', callback_data="/isuu"}},  
-{{text = '「احمد كامل」', callback_data="/gqpy"},{text = '「عصام صاصا」', callback_data="/ssan"},{text = '「ليجي سي」', callback_data="/lege"},{text = '「مروان موسي」', callback_data="/musaa"}}, 
-{{text = '「احمد موزه」', callback_data="/jsbh"}},  
-{{text = '「عفروتو」', callback_data="/afro"},{text = '「ابيوسف」', callback_data="/abusf"},{text = '「تامر حسني」', callback_data="/tmora"},{text = '「حماقي」', callback_data="/hmaky"}}, 
-{{text = '「ادهم نابلسي」', callback_data="/nbls"},{text = '「عمرو دياب」', callback_data="/moraa"}},
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
--- كيب احمد كامل--
-if Text == '/gqpy' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text ='「مبقتش اخاف」 ' , callback_data="/gqpy1"},{text = '「قولي」', callback_data="/gqpy2"}},  
-{{text =' 「متزعليش」' , callback_data="/gqpy3"},{text = '「كان في طفل」', callback_data="/gqpy4"}},  
-{{text =' 「انا رايح」' , callback_data="/gqpy5"},{text = '「مش شرط」', callback_data="/gqpy6"}},  
-{{text =' 「كانسر」' , callback_data="/gqpy7"},{text = '「يا ليل」', callback_data="/gqpy8"}},  
-{{text =' 「جاوبنا」' , callback_data="/gqpy9"},{text = '「زمن المعجزات」', callback_data="/gqpy10"}},  
-{{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
--- كيب بابلو--
-if Text == '/isuu' then
-local Teext =[[
-]]
-keyboard = {} 
+if Text == '/jsbh2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(144,144); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「برنس」' , callback_data="/isuu1"},{text = '「غابه」 ', callback_data="/isuu2"}},  
-{{text =' 「كنترول」' , callback_data="/isuu3"},{text = '「جنابو」', callback_data="/isuu4"}},  
-{{text =' 「دون」' , callback_data="/isuu5"},{text = '「عوده」', callback_data="/isuu6"}},  
-{{text =' 「نكسه」' , callback_data="/isuu7"},{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
--- كيب احمد موزه--
-if Text == '/jsbh' then
-local Teext =[[
-]]
-keyboard = {} 
+if Text == '/jsbh3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(145,145); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「انا نفسي ثم نفسي」' , callback_data="/ssdd1"},{text = '「بسعر السوق」 ', callback_data="/ssdd2"}},  
-{{text =' 「قلبي بيرضي」' , callback_data="/ssdd3"},{text = '「صحبه هندي」 ', callback_data="/ssdd4"}},  
-{{text =' 「مفيش واحد سالك」' , callback_data="/ssdd5"},{text = '「وقت المصالح」', callback_data="/ssdd6"}},  
-{{text =' 「باي باي」' , callback_data="/ssdd7"},{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
----------كيب شواحه---------
-if Text == '/ssd' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「سكينه سلك」' , callback_data="/ssdd1"},{text = '「سحابه مطرايه」 ', callback_data="/ssdd2"}},  
-{{text =' 「اخويا مش صحبي」' , callback_data="/ssdd3"},{text = '「مفيش مني」 ', callback_data="/ssdd4"}},  
-{{text =' 「لعبو بيا」' , callback_data="/ssdd5"},{text = '「فاجر وجن」', callback_data="/ssdd6"}},  
-{{text =' 「بارد ممل」' , callback_data="/ssdd7"},{text = '「يسطا」', callback_data="/ssdd8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
----------كيب عمار------------
-if Text == '/masryy2' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • برشام منوم' , callback_data="/amar1"},{text = '• بتيجي فبالي ', callback_data="/amar2"}},  
-{{text =' • طفره' , callback_data="/amar3"},{text = '• بساط ', callback_data="/amar5"}},  
-{{text =' • هلوسه' , callback_data="/amar6"},{text = '• ترام ', callback_data="/amar7"}},  
-{{text =' • اخر عازف' , callback_data="/amar8"},{text = '• مسوخ ', callback_data="/amar9"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
---كيب عصام صاصا---
-if Text == '/ssan' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「شايف عيال محدثه」' , callback_data="/ssan1"},{text = '「عارفك يجرح」', callback_data="/ssan2"}},  
-{{text ='「في يوم فراقك」 ' , callback_data="/ssan3"},{text = '「دنيا ظيطه」', callback_data="/ssan4"}},  
-{{text =' 「انا بعشقني اوي」' , callback_data="/ssan5"},{text = '「العبيط جاي يظيط」', callback_data="/ssan6"}},  
-{{text =' 「الاخصام ضمو لبعض」' , callback_data="/ssan7"},{text = '「معايا انا متجيش」 ', callback_data="/ssan8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
--------------------كيب شاكاي------------
-if Text == '/vvbg' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「بسكوته」' , callback_data="/vvbg1"},{text = '「ادلعي يموزه」 ', callback_data="/vvbg2"}},  
-{{text =' 「ناس ملاعين」' , callback_data="/vvbg3"},{text = '「كله رايح」 ', callback_data="/vvbg5"}},  
-{{text =' 「تعالي نحلل」' , callback_data="/vvbg6"},{text = '「يا مقسطاتي」', callback_data="/vvbg7"}},  
-{{text =' 「الظلم حرام」' , callback_data="/vvbg8"},{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
-----نور الدبن-------
-if Text == '/norlden' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text =' • ملكاي مكان جوانا' , callback_data="/norrrr1"},{text = '• ماضي وراح ', callback_data="/norrrr2"}},  
-{{text =' • مالقيتك' , callback_data="/norrrr3"},{text = '• ليلي', callback_data="/norrrr4"}},  
-{{text =' • خانو لي' , callback_data="/norrrr5"},{text = '• دموع الروح', callback_data="/norrrr6"}},  
-{{text =' • سلطانك' , callback_data="/norrrr7"},{text = '• ادماني', callback_data="/norrrr8"}},  
-{{text =' • كسرت جناحي' , callback_data="/norrrr9"},{text = '• انتي', callback_data="/norrrr10"}},  
-{{text =' • انسيني' , callback_data="/norrrr11"},{text = '• حبيتك انا', callback_data="/norrrr12"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
----------كيب ليجي-----------
-if Text == '/lege' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • اتنين بليل' , callback_data="/legcy1"},{text = '• عرفه ', callback_data="/legcy2"}},  
-{{text =' • وسع' , callback_data="/legcy3"},{text = '• يخويا ', callback_data="/legcy4"}},  
-{{text =' • روشته' , callback_data="/legcy5"},{text = '• على حسابي ', callback_data="/legcy6"}},  
-{{text =' • تاني' , callback_data="/legcy7"},{text = '• مفيش مانع ', callback_data="/legcy8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
----------كيب مروان-----------
-if Text == '/musaa' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • علي عيني' , callback_data="/maro1"},{text = '• تيسلا ', callback_data="/maro2"}},  
-{{text =' • البوصله ضاعت' , callback_data="/maro3"},{text = '• نهايه العالم ', callback_data="/maro5"}},  
-{{text =' • دروجبا' , callback_data="/maro6"},{text = '• نجوم باريس ', callback_data="/maro7"}},  
-{{text =' • فرعون' , callback_data="/maro8"},{text = '• مكهرب ', callback_data="/maro9"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
--- كيب ابيوسف--
-if Text == '/abusf' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' 「باشا اعتمد」' , callback_data="/absef1"},{text = '「حرب」 ', callback_data="/absef5"}},  
-{{text =' 「صولجان」' , callback_data="/absef2"},{text = '「الخيال」', callback_data="/absef6"}},  
-{{text =' 「كان ف دماغي」' , callback_data="/absef3"},{text = '「سيستم」', callback_data="/absef7"}},  
-{{text =' 「انترو」' , callback_data="/absef4"},{text = '「او لا لا」', callback_data="/absef8"}},  
-{{text =' 「رجوع」' , callback_data="/masryy0"}},
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
-end
--- كيب عفروتو --
-if Text == '/afro' then
-local Teext =[[
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text ='「انجي」 ' , callback_data="/frot1"},{text = '「بكار」', callback_data="/frot6"}},  
-{{text =' 「انتو اعدائي」' , callback_data="/frot2"},{text = '「كاسين」', callback_data="/frot7"}},  
-{{text =' 「مظلات」' , callback_data="/frot3"},{text = '「راح مني」', callback_data="/frot8"}},  
-{{text =' 「سجاره」' , callback_data="/frot4"},{text = '「متفقين」', callback_data="/frot9"}},  
-{{text =' 「مش بالحظوظ」' , callback_data="/frot5"},{text = '「ناميجا」', callback_data="/frot10"}},  
-{{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-}
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
--- كيب نابلسي --
-if Text == '/nbls' then
-local Teext =[[
-]]
-keyboard = {} 
+if Text == '/jsbh4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(146,146); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text ='「خايف」 ' , callback_data="/nbus1"},{text = '「حدك بالكون」', callback_data="/nbus6"}},  
-{{text =' 「حان الان」' , callback_data="/nbus2"},{text = '「توعدنا」', callback_data="/nbus7"}},  
-{{text =' 「ما عندي استعداد」' , callback_data="/nbus3"},{text = '「كيف بحبك هيك」', callback_data="/nbus8"}},  
-{{text =' 「نور عيني」' , callback_data="/nbus4"},{text = '「نسخه منك」', callback_data="/nbus9"}},  
-{{text =' 「بتعرف شعور」' , callback_data="/nbus5"},{text = '「مشتاق」', callback_data="/nbus10"}},  
-{{text = '「رجوع」', callback_data="/masryy0"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
----------كيب تامر-----------
-if Text == '/tmora' then
-local Teext =[[
-]]
-keyboard = {} 
+
+if Text == '/jsbh5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(147,147); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • اختراع' , callback_data="/tmora1"},{text = '• صوتك ', callback_data="/tmora5"}},  
-{{text =' • روح قلبي' , callback_data="/tmora2"},{text = '• مش تمثال ', callback_data="/tmora6"}},  
-{{text =' • يا تاعبني' , callback_data="/tmora3"},{text = '• بحبك ', callback_data="/tmora7"}},  
-{{text =' • نفس الحنين' , callback_data="/tmora4"},{text = '•علي حسابي ', callback_data="/tmora8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
----------كيب عمرو-----------
-if Text == '/moraa' then
-local Teext =[[
-]]
-keyboard = {} 
+
+if Text == '/jsbh6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(148,148); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • وياه' , callback_data="/dyab1"},{text = '• قالك ندم ', callback_data="/dyab5"}},  
-{{text =' • يانا يالا' , callback_data="/dyab2"},{text = '• جماله ', callback_data="/dyab6"}},  
-{{text =' • ده لو اتساب' , callback_data="/dyab3"},{text = '• يتعلمو ', callback_data="/dyab7"}},  
-{{text =' • جنب حبيبي' , callback_data="/dyab4"},{text = '•وماله ', callback_data="/dyab8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
----------كيب حماقي-----------
-if Text == '/hmaky' then
-local Teext =[[
-]]
-keyboard = {} 
+
+if Text == '/jsbh7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(149,149); 
+keyboard = {}
 keyboard.inline_keyboard = {
-{{text = 'قم بالاختيار الاغنيه الان . .🎀🥺', url="t.me/errrrrrro"}},
-{{text =' • مش هقدر انسي' , callback_data="/hmaky1"},{text = '• عرض مستمر ', callback_data="/hmaky5"}},  
-{{text =' • يافاتني' , callback_data="/hmaky2"},{text = '• تك ', callback_data="/hmaky6"}},  
-{{text =' •مش قادر انساه' , callback_data="/hmaky3"},{text = '• عايزك تسمعني ', callback_data="/hmaky7"}},  
-{{text =' • يا نسيم' , callback_data="/hmaky4"},{text = '•ردودو غريبه ', callback_data="/hmaky8"}},  
-{{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"}},
-{{text = '𝙱𝙰𝙲𝙺', callback_data="/masryy0"}},
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+---------شواحه----------
+if Text == ' /ssdd1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(88,88); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = ' ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(89,89); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text =  'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ' , url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(90,90); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = ' ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(91,91); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text =  'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(92,92); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = ' ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ' , url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd6 ' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(93,93); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text =  'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd7 ' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(94,94); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text ='  ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ' , url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssdd8 ' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(95,95); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text ='  ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ' , url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+---- احمد كامل-----
+if Text == '/gqpy1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(152,152); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(153,153); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(154,154); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(155,155); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(156,156); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(157,157); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(158,158); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(159,159); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(160,160); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/gqpy10' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(161,161); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+---------شكاي-------
+if Text == '/vvbg1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(125,125); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(126,126); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(127,127); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(128,128); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(129,129); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(130,130); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/vvbg7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(131,131); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+----عصام صاصا----
+if Text == '/ssan1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(170,170); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(171,171); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(172,172); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(173,173); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(174,174); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(175,175); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(176,176); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/ssan8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(177,177); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+----بابلو-----
+if Text == '/isuu1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(134,134); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(135,135); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(136,136); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(137,137); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(138,138); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(139,139); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/isuu7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(140,140); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+---------
+if Text == '/norrrr1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(94,94); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(59,59); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(61,61); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(63,63); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(56,56); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(79,79); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(58,58); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(57,57); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(65,65); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr10' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(80,80); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr11' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(70,70); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/norrrr12' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(109,109); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/emeui/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+--------
+if Text == '/legcy1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(222,222); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(202,202); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(203,203); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(204,204); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(205,205); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(206,206); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(207,207); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/legcy8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(208,208); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+--------
+if Text == '/amar1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(3,3); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(4,4); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(5,5); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(4,4); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(10,10); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(6,6); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(7,7); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(9,9); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/amar9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(8,8); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+--------
+if Text == '/maro1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(234,234); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(227,227); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(229,229); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(4,4); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(232,232); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(228,228); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(231,231); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(230,230); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/maro9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(235,235); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+--------
+if Text == '/absef1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(237,237); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(241,241); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(238,238); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(243,243); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(246,246); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(248,248); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(250,250); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/absef8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(251,251); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+---- عفروتو-----
+if Text == '/frot1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(274,274); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(275,275); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(276,276); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(277,277); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(278,278); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(279,279); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(281,281); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(282,282); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(283,283); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/frot10' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(285,285); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+---- انابلسي-----
+if Text == '/nbus1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(286,286); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(288,288); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(289,289); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(290,290); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(291,291); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(293,293); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(295,295); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(296,296); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus9' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(297,297); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/nbus10' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(298,298); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+--------
+if Text == '/tmora1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(299,299); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(300,300); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(301,301); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(302,302); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(303,303); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(304,304); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(305,305); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/tmora8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(306,306); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+--------
+if Text == '/dyab1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(307,307); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(308,308); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(309,309); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(310,310); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(311,311); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(312,312); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(313,313); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/dyab8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(314,314); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+--------
+if Text == '/hmaky1' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(324,324); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky2' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(323,323); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky3' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(325,325); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky4' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(326,326); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky5' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(327,327); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky6' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(328,328); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky7' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(329,329); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
+if Text == '/hmaky8' then
+Text = 'tēlēງrค๓ » @errrrrrro'
+rob = math.random(330,330); 
+keyboard = {}
+keyboard.inline_keyboard = {
+{
+{text = 'ՏΌႮᎡᏟᎬ ＥᏒᏒ’σᏒ', url="t.me/errrrrrro"},
+},
+}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. Chat_id .. '&voice=https://t.me/erihbx/'..rob..'&caption=' .. URL.escape(Text).."&reply_to_message_id=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if data.ID == "UpdateNewMessage" then  -- new msg
 msg = data.message_
