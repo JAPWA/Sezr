@@ -5574,21 +5574,31 @@ end;end,nil)
 return false
 end
 ------------------------------------------------------------------------
-if text == "اسمي"  then 
-tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
-if result.first_name_  then
-first_name = ' ☽ اسمك الاول  ⇇ {`'..(result.first_name_)..'`}'
+if text == "اسمي" and not bot_data:get(rob_id..'ghiktr'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
 else
-first_name = ''
-end   
-if result.last_name_ then 
-last_name = ' ☽ اسمك الثاني  ⇇ {`'..result.last_name_..'`}' 
-else
-last_name = ''
-end      
-send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
+username = 'S_a_i_d_i'
+end
+local msg_id = msg.id_/2097152/0.5  
+local textt = "- ليس لديك صور "..(bot_data:get(rob_id..'Name:Bot_') or 'اخري')
+local Robot = 'https://t.me/Qtdao/71'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Robot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
-end 
+end
 if text == "بايو" and not bot_data:get(ban_id..'my_bio'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
@@ -5635,6 +5645,16 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ☽ ايديك  ⇇ '..msg.sender_user_id_)
+end
+if text == 'رقمي' then   
+tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
+if result.phone_number_  then
+one_nu = "• رقمك ⇇ 『"..(result.phone_number_).."』"
+else
+one_nu = "• تم وضع رقمك لجهاتك اتصالك فقط\n☽"
+end      
+send(msg.chat_id_, msg.id_,one_nu) 
+end,nil)
 end
 if text == 'الرتبه' and tonumber(msg.reply_to_message_id_) > 0 then
 function start_function(extra, result, success)
@@ -6496,7 +6516,107 @@ end,nil)
 end 
 end
 
-
+if text == 'تفعيل حمايه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+bot_data:set(rob_id.."lock:Contact"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Spam"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Photo"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:forward"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Link"..msg.chat_id_,'del')
+bot_data:set(rob_id.."lock:Lock:Sexy"..msg.chat_id_,'del')  
+bot_data:set(rob_id..'lock:Fshar'..msg.chat_id_,true) 
+bot_data:set(rob_id..'lock:Fars'..msg.chat_id_,true) 
+bot_data:set(rob_id.."my_anamen:status"..msg.chat_id_,true) 
+bot_data:set(rob_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+bot_data:set(rob_id..'ghiktr'..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:Bot:kick"..msg.chat_id_,'kick')  
+bot_data:set(rob_id..'lock_edit_med'..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:inline"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Video"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Animation"..msg.chat_id_,'del')  
+bot_data:set(rob_id.."lock:Sticker"..msg.chat_id_,'del')  
+bot_data:set(rob_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:Video"..msg.chat_id_,'ked')  
+bot_data:hset(rob_id.."flooding:settings:"..msg.chat_id_ ,"flood",'mute')  
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'• تم تعطيل جلب الصوره ،\n• تم قفل البوتات  ،\n• تم قفل التكرار ،\n• تم قفل الروابط ،\n• تم قفل التوجيه ،\n• تم قفل الملصقات ،\n• تم قفل المتحركه ،\n• تم قفل الفيديو ،\n• تم قفل الفشار ،\n• تم قفل الانلاين ،\n• تم قفل تعديل المديا ،\n• تم وضع التكرار  ،\n• تم قفل الفارسيه  ،\n• تم وضع الايدي بدون صوره ،n  \n• تم تفعيل الحمايه  بواسطه ، [『'..Rutba(msg.sender_user_id_,msg.chat_id_)..'』](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+if text == 'تعطيل حمايه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+bot_data:del(rob_id.."lock:inline"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Lock:Sexy"..msg.chat_id_)  
+bot_data:hdel(rob_id.."flooding:settings:"..msg.chat_id_ ,"flood")  
+bot_data:set(rob_id..'lock_edit_med'..msg.chat_id_,true) 
+bot_data:del(rob_id..'lock:Fshar'..msg.chat_id_) 
+bot_data:del(rob_id.."my_anamen:status"..msg.chat_id_) 
+bot_data:del(rob_id.."lock:Bot:kick"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Photo"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Video"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Link"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Sticker"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Animation"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:forward"..msg.chat_id_)  
+bot_data:del(rob_id..'Bot:Id'..msg.chat_id_) 
+bot_data:del(rob_id..'Bot:Id:Photo'..msg.chat_id_) 
+bot_data:del(rob_id..'ghiktr'..msg.chat_id_) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'• تم تفعيل جلب الصوره ،\n• تم  فتح البوتات  ،\n• تم  فتح التكرار ،\n• تم  فتح الروابط ،\n• تم  فتح التوجيه ،\n• تم  فتح الملصقات ،\n• تم  فتح المتحركه ،\n ?? تم  فتح الفيديو ،\n• تم  فتح الفشار ،\n• تم  فتح الانلاين ،\n• تم  فتح تعديل المديا ،\n• تم وضع التكرار  ،\n• تم  فتح الفارسيه  ،\n• تم وضع الايدي بصوره،n \n• تم تفعيل الحمايه  بواسطه ، [『'..Rutba(msg.sender_user_id_,msg.chat_id_)..'』](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+if text == 'تفعيل الحمايه القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+bot_data:set(rob_id.."lock:text"..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:AddMempar"..msg.chat_id_,'kick')
+bot_data:set(rob_id.."lock:Join"..msg.chat_id_,'kick')
+bot_data:set(rob_id.."lock:Bot:kick"..msg.chat_id_,'kick')
+bot_data:set(rob_id.."lockpin"..msg.chat_id_, true) 
+bot_data:sadd(rob_id..'lock:pin',msg.chat_id_) 
+bot_data:set(rob_id..'lock:tagservr'..msg.chat_id_,true)  
+bot_data:set(rob_id..'lock:Fars'..msg.chat_id_,true) 
+bot_data:set(rob_id..'lock:Fshar'..msg.chat_id_,true)
+bot_data:set(rob_id..'lock:edit'..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:inline"..msg.chat_id_,'del')
+bot_data:set(rob_id.."lock:Lock:Sexy"..msg.chat_id_,'del')
+bot_data:del(rob_id.."pp_photo:status"..msg.chat_id_) 
+bot_data:del(rob_id.."my_photo:status"..msg.chat_id_) 
+bot_data:hset(rob_id.."flooding:settings:"..msg.chat_id_ ,"flood",'keed')  
+bot_data:set(rob_id.."lock:Contact"..msg.chat_id_,'ked')  
+bot_data:set(rob_id.."lock:Spam"..msg.chat_id_,'ked')  
+bot_data:set(rob_id.."lock:forward"..msg.chat_id_,'ked')  
+bot_data:set(rob_id.."lock:Keyboard"..msg.chat_id_,'ked')  
+bot_data:set(rob_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+bot_data:set(rob_id..'Bot:Id:Photo'..msg.chat_id_,true) 
+bot_data:set(rob_id.."lock:Photo"..msg.chat_id_,'ked')  
+bot_data:set(rob_id.."lock:geam"..msg.chat_id_,'ked')  
+bot_data:set(rob_id.."lock:Sticker"..msg.chat_id_,'ktm')  
+bot_data:set(rob_id..'ghiktr'..msg.chat_id_,true) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'تم قفل الحمايه كامله\nتحظير هذا الحمايه تقفل كل حاجه بلتقييد\nتفعيل الحمايه دي بس عند التفليش او التحفيل\nلتعطيل الحمايه القصوه\nاكتب تعطيل الحمايه القوصه\n تم تفعيل الحمايه القصوه من قبل [『'..Rutba(msg.sender_user_id_,msg.chat_id_)..'』](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
+if text == 'تعطيل القصوه'and Mod(msg) and msg.reply_to_message_id_ == 0 then 
+bot_data:del(rob_id.."lock:Spam"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Join"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:text"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:AddMempar"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Bot:kick"..msg.chat_id_)  
+bot_data:del(rob_id..'lock:edit'..msg.chat_id_)
+bot_data:del(rob_id.."lockpin"..msg.chat_id_)  
+bot_data:del(rob_id..'lock:Fshar'..msg.chat_id_) 
+bot_data:del(rob_id..'lock:Fars'..msg.chat_id_) 
+bot_data:del(rob_id.."lock:Link"..msg.chat_id_)  
+bot_data:del(rob_id..'sing:for:me'..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Photo"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Video"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:Sticker"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:forward"..msg.chat_id_)  
+bot_data:del(rob_id.."lock:geam"..msg.chat_id_)  
+bot_data:del(rob_id..'Bot:Id:Photo'..msg.chat_id_) 
+bot_data:set(rob_id.."pp_photo:status"..msg.chat_id_,true) 
+bot_data:set(rob_id.."my_photo:status"..msg.chat_id_,true) 
+bot_data:del(rob_id..'ghiktr'..msg.chat_id_) 
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
+send(msg.chat_id_, msg.id_,'  تم تعطيل الحمايه القصوه من قبل    [『'..Rutba(msg.sender_user_id_,msg.chat_id_)..'』](T.ME/'..(data.username_ or 'textchuser')..')  ')
+end,nil)   
+end
 if text == 'قفل الدردشه' and msg.reply_to_message_id_ == 0 and Manager(msg) then 
 bot_data:set(ban_id.."lock:text"..msg.chat_id_,true) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)  
