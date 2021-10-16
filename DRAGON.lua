@@ -8557,7 +8557,7 @@ keyboard.inline_keyboard = {
 {text = ''..result.first_name_..'', url = "https://t.me/"..result.username_..""},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{{text = ' '..result.first_name_..' ',url="http://t.me/"..sudos.UserName}},
 },
 }
 local msg_id = msg.id_/2097152/0.5
