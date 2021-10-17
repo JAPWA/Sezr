@@ -1639,8 +1639,9 @@ local keyboard = {
 {'الاحصائيات'},
 {'المطور','المساعد'},
 {'معلومات الكيبورد'},
-{'تواصل لسورس','اوامر اضف'},
-{'اوامر التفعيل','اوامر الحمايه'},
+{'قسـم مـطـورين السـورس','اوامـر اضـف ومـسـح'},
+{'اوامـر تفعيل و تعطـيل','اوامـر الحـمـايه'},
+{'اوامـر الاذاعـه'},
 {'جلب المشتركين','جلب النسخه'},
 {'جلب المطورين'},
 {'تحديث السورس ','الاصدار'},
@@ -2183,27 +2184,34 @@ t = " ☽ لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-
 if text == 'الاحصائيات' and msa3d(msg) then 
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'صعيدي') 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
-Namebot = " احصائيات بوت "..Namebot..'\nعدد الجروبات ⇇{'..Groups..'}\nعدد المشتركين ⇇{'..Users..'}'
+local getbioY = getbio(msg.sender_user_id_)
+tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = 'اسم بوت ⤌ '..Namebot..''
+local tessttmo = 'الجروبات ⤌ '..Groups..''
+local tessttm = 'المشتركين ⤌ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = tessttmos, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = tessttmo, url = "t.me/"..dofile("./Info.lua").botUserName},
+},
+{
+{text = tessttm, url = "t.me/"..dofile("./Info.lua").botUserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
@@ -2212,22 +2220,26 @@ if text == 'الجروبات' and msa3d(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'صعيدي') 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
-Namebot = " جروبات بوت "..Namebot..'\nعدد الجروبات ⇇{`'..Groups..'`}'
+local getbioY = getbio(msg.sender_user_id_)
+tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = 'اسم بوت ⤌ '..Namebot..''
+local tessttmo = 'الجروبات ⤌ '..Groups..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = tessttmos, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = tessttmo, url = "t.me/"..dofile("./Info.lua").botUserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
@@ -2236,22 +2248,26 @@ if text == 'المشتركين' and msa3d(msg) then
 local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'صعيدي') 
 local Groups = bot_data:scard(ban_id..'Chek:Groups')  
 local Users = bot_data:scard(ban_id..'User_Bot')  
-Namebot = " مشتركين بوت "..Namebot..'\nعدد المشتركين ⇇{`'..Users..'|}'
+local getbioY = getbio(msg.sender_user_id_)
+tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = 'اسم بوت ⤌ '..Namebot..''
+local tessttm = 'المشتركين ⤌ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = tessttmos, url = "t.me/"..dofile("./Info.lua").botUserName},
 },
 {
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = tessttm, url = "t.me/"..dofile("./Info.lua").botUserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪 ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else 
-send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
@@ -13797,7 +13813,7 @@ local texxtt = ''..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = texxtt, url="http://t.me/"..username},
+{text = texxtt, url="t.me/"..dofile("./Info.lua").botUserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
@@ -13832,7 +13848,7 @@ local texxtt =   ''..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = texxtt, url="http://t.me/"..username},
+{text = texxtt, url="t.me/"..dofile("./Info.lua").botUserName},
 },
 {
 {text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
@@ -15424,7 +15440,7 @@ local List = {
 [[
 - 🇨🇰 𝒖𝒔??𝒓𝒏𝒂𝒎𝒆 . #username 𖣂.
 - 🇨🇰 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
-- 🇨🇰 ??𝒅 . #id 𖣂.
+- 🇨?? ??𝒅 . #id 𖣂.
 - 🇨🇰 𝒈𝒂𝒎??𝒔 . #game ??.
 - 🇨🇰 𝒎𝒔𝒈𝒔 . #msgs 𖣂.
 ]],
