@@ -16889,6 +16889,19 @@ bot_data:del(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
 bot_data:incrby(ban_id..'Msg_User'..msg.chat_id_..':'..iduserr,numadded)  
 send(msg.chat_id_, msg.id_," ☽ تم اضافة له {"..numadded..'} من الرسائل')  
 end
+if text == "تعطيل اطبع" and Manager(msg) then
+send(msg.chat_id_, msg.id_, 'تم تعطيل اطبع')
+bot_data:set(ban_id.."ahmed:pr:p"..msg.chat_id_,"close")
+end
+if text == "تفعيل اطبع" and Manager(msg) then
+send(msg.chat_id_, msg.id_,'تم تفعيل اطبع')
+bot_data:set(ban_id.."ahmed:pr:p"..msg.chat_id_,"open")
+end
+if text and text:match("^اطبع (.*)$") and bot_data:get(ban_id.."ahmed:pr:p"..msg.chat_id_) == "open" then
+local textt = text:match("^اطبع (.*)$")
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://devdeiveddev.ml/api/prant/photo?text='..textt..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true") 
+end
 ------------------------------------------------------------------------
 if bot_data:get(ban_id.."gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
