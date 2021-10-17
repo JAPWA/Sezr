@@ -14452,9 +14452,24 @@ end,nil)
 end,nil)
 end
 
-if text == "الساعه" then
-local ramsesj20 = "\n الساعه الان : "..os.date("%I:%M%p")
-send(msg.chat_id_, msg.id_,ramsesj20)
+if text == "الساعه" and not bot_data:get(rob_id..'Namebot'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = rob_id, offset_},function(extra,result,success)
+local textt = ' - الساعه الان '..os.date("%I:%M%p_,msg.chat_id_)
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url="t.me/errrrrrro"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Robot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = rob_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 
 if text == "التاريخ" then
@@ -22574,7 +22589,7 @@ end
 if #list == 0 then
 t = " ☽ لا يوجد ادمن"
 end
-send(msg.chat_id_,0,''..t..'\n ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺\n ☽ تم التعديل على الميديا\n ☽ الشخص الي قام بالتعديل\n ☽ ايدي الشخص ◂ '..result.sender_user_id_..'\n ☽ معرف الشخص ⇇{ '..users..' }') 
+send(msg.chat_id_,0,''..t..'\n ⩹━━━━⊶❲𖥳 𝐒𝐀𝐈??𝐈 𖥳❳⊷━━━━⩺\n ☽ تم التعديل على الميديا\n ☽ الشخص الي قام بالتعديل\n ☽ ايدي الشخص ◂ '..result.sender_user_id_..'\n ☽ معرف الشخص ⇇{ '..users..' }') 
 end,nil)
 DeleteMessage(msg.chat_id_,{[0] = msg.message_id_}) 
 end
