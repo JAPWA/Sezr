@@ -14454,7 +14454,7 @@ end
 
 if text == "الساعه" and not bot_data:get(rob_id..'Namebot'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = rob_id, offset_},function(extra,result,success)
-local textt = ' - الساعه الان '..os.date("%I:%M%p_,msg.chat_id_)
+local textt = 'الساعه الان'..os.date("%I:%M%p_,msg.chat_id_)
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
