@@ -5685,7 +5685,7 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 if text == "اسمي" and not bot_data:get(ban_id..'my_bio'..msg.chat_id_) then     
-tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
 else
@@ -5693,7 +5693,7 @@ username = 'S_a_i_d_i'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "- ليس لديك صور "..(bot_data:get(rob_id..'Name:Bot_') or 'اخري')
-local siria = 'https://t.me/Qtdao/71'
+local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -5712,9 +5712,9 @@ end
 if text == 'تفعيل اسمي' and Manager(msg) then   
 if bot_data:get(ban_id..'my_bio'..msg.chat_id_)  then
 bot_data:del(ban_id..'my_bio'..msg.chat_id_) 
-Text = '\n• تم تفعيل اسمي\n☽' 
+Text = '\n ☽ تم تفعيل اسمي' 
 else
-Text = '\n•  بالتاكيد تم تفعيل اسمي \n☽'
+Text = '\n ☽ بالتاكيد تم تفعيل اسمي'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -5722,9 +5722,9 @@ end
 if text == 'تعطيل اسمي' and Manager(msg) then  
 if not bot_data:get(ban_id..'my_bio'..msg.chat_id_)  then
 bot_data:set(ban_id..'my_bio'..msg.chat_id_,true) 
-Text = '\n•تم تعطيل اسمي\n☽' 
+Text = '\n ☽ تم تعطيل اسمي' 
 else
-Text = '\n•بالتاكيد تم تعطيل اسمي\n☽'
+Text = '\n ☽ بالتاكيد تم تعطيل اسمي'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -5737,7 +5737,7 @@ username = 'S_a_i_d_i'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' '..getbio(msg.sender_user_id_,msg.chat_id_)
-local siria = 'https://t.me/Qtdao/71'
+local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -5756,9 +5756,9 @@ end
 if text == 'تفعيل بايو' and Manager(msg) then   
 if bot_data:get(ban_id..'my_bio'..msg.chat_id_)  then
 bot_data:del(ban_id..'my_bio'..msg.chat_id_) 
-Text = '\n• تم تفعيل البايو\n☽' 
+Text = '\n ☽ تم تفعيل البايو' 
 else
-Text = '\n•  بالتاكيد تم تفعيل البايو \n☽'
+Text = '\n ☽ بالتاكيد تم تفعيل البايو'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -5766,9 +5766,9 @@ end
 if text == 'تعطيل بايو' and Manager(msg) then  
 if not bot_data:get(ban_id..'my_bio'..msg.chat_id_)  then
 bot_data:set(ban_id..'my_bio'..msg.chat_id_,true) 
-Text = '\n•تم تعطيل البايو\n☽' 
+Text = '\n ☽ تم تعطيل البايو' 
 else
-Text = '\n•بالتاكيد تم تعطيل البايو\n☽'
+Text = '\n ☽ بالتاكيد تم تعطيل البايو'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -5778,9 +5778,9 @@ end
 if text == 'رقمي' then   
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.phone_number_  then
-one_nu = "• رقمك ⇇ 『"..(result.phone_number_).."』"
+one_nu = " ☽ رقمك ⇇ 『*"..(result.phone_number_).."*』"
 else
-one_nu = "• تم وضع رقمك لجهاتك اتصالك فقط\n☽"
+one_nu = " ☽ تم وضع رقمك لجهاتك اتصالك فقط"
 end      
 send(msg.chat_id_, msg.id_,one_nu) 
 end,nil)
@@ -16186,8 +16186,8 @@ Msᴀɢ ~ #msgs
 [[
 🇪🇬≪💎≫ #username • メ
 🇪🇬≪💎≫ #stast  •メ
-??🇬≪💎≫ #id  • メ
-🇪🇬≪💎≫ #msgs  •メ
+🇪🇬≪💎≫ #id  • メ
+🇪??≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
 🇪🇬𝗖𝗛 - 『@S_a_i_d_i』 ☽ 
 ]],
@@ -18142,7 +18142,7 @@ local Teext =[[
 𓆩 المجموعات 𓆪
 𓆩 تفعيل/تعطيل المغادره 𓆪
 𓆩 مسح الجروبات 𓆪
-⩹━━━━⊶❲𖥳 𝐒𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
+⩹━━━━⊶❲𖥳 ??𝐀𝐈𝐃𝐈 𖥳❳⊷━━━━⩺
 
 ]]
 keyboard = {} 
