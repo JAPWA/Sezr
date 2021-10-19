@@ -12920,13 +12920,6 @@ end
 
 
 ---------------------
-if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
-if Constructor(msg) then  
-bot_data:set(ban_id.."my_photo:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," ☽ تم تفعيل الصوره") 
-return false  
-end
-end
 if text == "تعطيل الصوره" or text == 'تعطيل صورتي' then
 if Constructor(msg) then  
 bot_data:del(ban_id.."my_photo:status"..msg.chat_id_) 
@@ -13309,7 +13302,7 @@ if result.members_[i].status_.ID == "ChatMemberStatusMember" then
 tr = ''
 elseif result.members_[i].status_.ID == "ChatMemberStatusEditor" then  
 t = t + 1
-tr = ' {★}'
+tr = ' {☽}'
 end
 text = text.."⇉ [@"..ta.username_..']'..tr.."\n"
 if #admins == 0 then
